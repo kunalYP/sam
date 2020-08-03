@@ -626,5 +626,7 @@ input{
           
 .checked {
    color: orange;
+   width: 10px;
+   height: 10px;
  }
  
