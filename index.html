@@ -60,9 +60,11 @@
                                             role="button" aria-haspopup="true" aria-expanded="false">Work With us</a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="registergarage.html">Register Garage</a>
-                                            <a class="dropdown-item" href="">Register Vehicle Showroom and Shop</a>
-                                            <a class="dropdown-item" href="">Register Service Center</a>
-                                    
+                                            <a class="dropdown-item" href="registershowroom.html">Register Vehicle
+                                                Showroom and Shop</a>
+                                            <a class="dropdown-item" href="registerservicecenter.html">Register Service
+                                                Center</a>
+
                                         </div>
                                     </li>
 
@@ -128,7 +130,7 @@
     </section>
     <br><br>
     <section>
-        <div class="container-fluid services">
+        <div class="container-fluid services" id="services">
             <!---    <h4>Services We Provide</h4>
             <p> We cater an array of high-end products for Education and Government Sector </p>-->
             <div class="d-flex justify-content-around ">
@@ -205,7 +207,7 @@
                             Provider.</p>
                     </div>
                     <div class="col-sm-4 my-auto">
-                        <a class="btn getintouch mt-3 mt-sm-0" href="#">Get in Touch <i
+                        <a class="btn getintouch mt-3 mt-sm-0" href="#business">Get in Touch <i
                                 class="fa fa-angle-right ml-2"></i></a>
                     </div>
                 </div>
@@ -310,8 +312,8 @@
                 </div>
 
             </div>
-            <a href="nearbyshowrooms.html" class="badge badge-light" style="float:right;">See More <i class="fa fa-angle-double-right"
-                    aria-hidden="true"></i></a>
+            <a href="nearbyshowrooms.html" class="badge badge-light" style="float:right;">See More <i
+                    class="fa fa-angle-double-right" aria-hidden="true"></i></a>
         </div>
     </section>
     <br><br>
@@ -411,8 +413,8 @@
 
                 </div>
             </div>
-            <a href="nearbygarages.html" class="badge badge-light" style="float:right;">See More <i class="fa fa-angle-double-right"
-                    aria-hidden="true"></i></a>
+            <a href="nearbygarages.html" class="badge badge-light" style="float:right;">See More <i
+                    class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 
         </div>
     </section>
@@ -508,7 +510,7 @@
     </section>
     <br>
 
-    <div class="container-fluid solution ">
+    <div class="container-fluid solution " id="business">
 
         <div class="container">
             <h3>Register Your Garage and Service Center For Free !</h3>
@@ -544,8 +546,13 @@
                         </div>
                     </div>
                     <div class="col-sm-4 my-auto">
-                        <a class="btn getintouch mt-3 mt-sm-0" href="#">Register <i
+                        <a class="btn getintouch mt-3 mt-sm-0" href="registergarage.html">Register Garage<i
                                 class="fa fa-angle-right ml-2"></i></a>
+
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        <a class="btn getintouch mt-3 mt-sm-0" href="registerservicecenter.html">Register Service Center<i
+                            class="fa fa-angle-right ml-2"></i></a>
                     </div>
                 </div>
 
@@ -582,15 +589,15 @@
 
                         </div>
                         <div class="col-sm-5 ">
-                            <img src="images/3028570.svg" alt="Mission" class="img-fluid" width="300px" />
+                            <img src="images/3028570.svg" alt="Mission" height="200px" width="400px" />
 
 
                         </div>
 
                     </div>
-                    <div class="gettouch">
-                        <a class="btn getintouch mt-3 mt-sm-0" href="#">Register <i
-                                class="fa fa-angle-right ml-2"></i></a>
+                    <div class="col-sm-2 p-0">
+                        <a class="btn getintouch mt-3 mt-sm-0" href="registershowroom.html">Register Showroom<i
+                            class="fa fa-angle-right ml-2"></i></a>
                     </div>
                 </div>
 
@@ -643,7 +650,7 @@
                             style="padding-left:21px;">In Your City.</div>
                     </h5>
 
-                    <button class="btn readmore">Read More <i class="fa fa-angle-right "></i></button>
+                  <a href="#services">  <button class="btn readmore">Read More <i class="fa fa-angle-right "></i></button></a>
                 </div>
                 <div class="col-sm-6 my-auto ">
                     <div class="row justify-content-center justify-content-sm-end mt-3 mt-sm-0">
@@ -712,15 +719,16 @@
                             <a class="dark-grey-text" href="index.html">Home</a>
                         </p>
                         <p>
-                            <a class="dark-grey-text" href="#">Work With Us</a>
+                            <a class="dark-grey-text" href="registergarage.html">Add garage</a>
                         </p>
                         <p>
-                            <a class="dark-grey-text" href="#">Contact Us</a>
+                            <a class="dark-grey-text" href="registershowroom.html">Add Showroom</a>
                         </p>
                         <p>
-                            <a class="dark-grey-text" href="#">About
-                                Us</a>
+                            <a class="dark-grey-text" href="#">Contact Us
+                                </a>
                         </p>
+                   
                     </div>
                 </div>
 
