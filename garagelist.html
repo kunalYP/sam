@@ -183,7 +183,8 @@
         <div class="container-fluid services  pt-5 mt-5 hide">
             <h4><span>Select The</span> Garage</h4>
             <p>Just Click On The Garage</p>
-            <div class="d-flex justify-content-around kp">
+            <div class=" d-flex justify-content-around kp">
+                
                 <label>
                     <input type="radio" name="product" class="card-input-element" data-toggle="modal"
                         data-target="#confirm" />
@@ -570,25 +571,24 @@
     <script>
         $(".signup-form").hide();
         $(".signup").css("background", "none");
-
+    
         $(".login").click(function () {
             $(".signup-form").hide();
             $(".login-form").show();
             $(".signup").css("background", "none");
-            $(".login").css("background", " rgb(229, 236, 229)");
+            $(".login").css("background","#75e2e9");
         });
-
+    
         $(".signup").click(function () {
             $(".signup-form").show();
             $(".login-form").hide();
             $(".login").css("background", "none");
-            $(".signup").css("background", " rgb(229, 236, 229)");
+            $(".signup").css("background", "#75e2e9");
         });
-
+    
         $(".btn").click(function () {
             $(".input").val("");
         });
-
     </script>
 </body>
 

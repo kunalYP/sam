@@ -227,24 +227,7 @@
                         <input type="file" name="your_email" id="your_email" class="input-text" required
                             pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
                     </div>
-                    <hr style="border:2px solid #2f73a3;">
-                    <h2 class="pt-4">Login Credentials</h2>
-    
-                    <div class="form-row">
-                        <label for="your_email">Mobile No :</label>
-                        <input type="text" name="your_email" id="your_email" class="input-text" required
-                            pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
-                    </div>
-                    <div class="form-group">
-                        <div class="form-row form-row-1">
-                            <label for="first_name">New Password</label>
-                            <input type="text" name="first_name" id="first_name" class="input-text">
-                        </div>
-                        <div class="form-row form-row-1">
-                            <label for="last_name">Confirm Password</label>
-                            <input type="text" name="last_name" id="last_name" class="input-text">
-                        </div>
-                    </div>
+             
                     <hr style="border:2px solid #2f73a3;">
                     <h2 class="pt-4">Garage Details</h2>
                     <div class="form-row">
@@ -282,9 +265,26 @@
                             <input type="text" name="last_name" id="last_name" class="input-text">
                         </div>
                     </div>
+                    <hr style="border:2px solid #2f73a3;">
+                    <h2 class="pt-4">Login Credentials</h2>
     
+                    <div class="form-row">
+                        <label for="your_email">Mobile No :</label>
+                        <input type="text" name="your_email" id="your_email" class="input-text" required
+                            pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <label for="first_name">New Password</label>
+                            <input type="text" name="first_name" id="first_name" class="input-text">
+                        </div>
+                        <div class="form-row form-row-1">
+                            <label for="last_name">Confirm Password</label>
+                            <input type="text" name="last_name" id="last_name" class="input-text">
+                        </div>
+                    </div>
                     <div class="form-row-last">
-                        <input type="submit" name="register" class="register" value="Send">
+                        <input type="submit" name="register" class="register" value="Register">
                     </div>
                 </form>
             </div>
@@ -528,14 +528,14 @@
         $(".signup-form").hide();
         $(".login-form").show();
         $(".signup").css("background", "none");
-        $(".login").css("background", " rgb(229, 236, 229)");
+        $(".login").css("background","#75e2e9");
     });
 
     $(".signup").click(function () {
         $(".signup-form").show();
         $(".login-form").hide();
         $(".login").css("background", "none");
-        $(".signup").css("background", " rgb(229, 236, 229)");
+        $(".signup").css("background", "#75e2e9");
     });
 
     $(".btn").click(function () {

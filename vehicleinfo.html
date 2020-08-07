@@ -85,7 +85,7 @@
     </header>
 
     <section>
-        <div id="carouselExampleIndicators" class="carousel slide mt-4 pt-4" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -268,28 +268,20 @@
     </section>
     <section>
         <div class="container-fluid services pt-4">
-            <h4><span>Official </span> Videos <span></span></h4>
+            <h4><span>Official </span> Video <span></span></h4>
             <p> We cater an array of high-end products for Education and Government Sector </p>
         </div>
 
-        <div class="container">
-            <div class="d-flex">
+        <div class="container videos">
+         
 
-                <div class="p-2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MnPu-Ten-tk" frameborder="0"
+            
+                    <iframe  class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/MnPu-Ten-tk" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                </div>
-           
-                <div class="p-2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b0cqiaU4gIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                </div>
                 
             </div>
-            <a href="" class="badge badge-light" style="float:right;">See More <i class="fa fa-angle-double-right"
-                aria-hidden="true"></i></a>
-        </div>
+     
     </section>
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -380,7 +372,7 @@
     <!-- Page Content -->
     <div class="container">
     
-        <div class="container-fluid services pt-4">
+        <div class="container-fluid services gallary">
             <h4><span> Photo</span>  Gallary <span></span></h4>
             <p> We cater an array of high-end products for Education and Government Sector </p>
         </div> 
@@ -599,7 +591,6 @@
         crossorigin="anonymous"></script>
 </body>
 <script>
-
     $(".signup-form").hide();
     $(".signup").css("background", "none");
 
@@ -607,20 +598,19 @@
         $(".signup-form").hide();
         $(".login-form").show();
         $(".signup").css("background", "none");
-        $(".login").css("background", " rgb(229, 236, 229)");
+        $(".login").css("background","#75e2e9");
     });
 
     $(".signup").click(function () {
         $(".signup-form").show();
         $(".login-form").hide();
         $(".login").css("background", "none");
-        $(".signup").css("background", " rgb(229, 236, 229)");
+        $(".signup").css("background", "#75e2e9");
     });
 
     $(".btn").click(function () {
         $(".input").val("");
     });
-   
 
 </script>
 </html>

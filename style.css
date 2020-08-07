@@ -245,7 +245,7 @@ div.card {
             .signup,
             .login{
               width: 50%;
-              background: rgb(229, 236, 229);
+              background: #75e2e9;;
               float: left;
               height: 60px;
               line-height: 60px;
@@ -256,7 +256,7 @@ div.card {
             
             .signup-form,
             .login-form{
-              background: rgb(229, 236, 229);
+              background: #75e2e9;
               padding: 20px;
               clear: both;
               width: 100%;
@@ -791,7 +791,7 @@ input:focus {
   
   @media (max-width: 991px) {
     #hero {
-      height: 100vh;
+      height: 70vh;
     }
     #hero .animated {
       -webkit-animation: none;
@@ -882,7 +882,7 @@ input:focus {
   
   @media (max-width: 991px) {
     #hero2 {
-      height: 100vh;
+      height: 60vh;
     }
     #hero2 .animated {
       -webkit-animation: none;
@@ -1818,3 +1818,27 @@ color: #fd1111;
 .car-detail.wheel2 {
   left: 82px;
 }
+
+
+.videos {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; 
+/* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 70%;
+  border: none;
+}
+.gallary{
+  margin-top: -60px;
+}
+

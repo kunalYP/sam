@@ -181,7 +181,7 @@
                 <div class="row">
                     <div class="searchbox2 s">
                         <button class="btn-menu nearby">
-                            <img src="images/img_227234.png" class="img-fluid car" width="80px">
+                            <img src="images/img_227234.png" class="img-fluid caricon" width="80px">
                         </button>
                         <input id="search" type="text" placeholder="Search Garage and Service Center" name="search"
                             class="search">
@@ -620,25 +620,24 @@
     <script>
         $(".signup-form").hide();
         $(".signup").css("background", "none");
-
+    
         $(".login").click(function () {
             $(".signup-form").hide();
             $(".login-form").show();
             $(".signup").css("background", "none");
-            $(".login").css("background", " rgb(229, 236, 229)");
+            $(".login").css("background","#75e2e9");
         });
-
+    
         $(".signup").click(function () {
             $(".signup-form").show();
             $(".login-form").hide();
             $(".login").css("background", "none");
-            $(".signup").css("background", " rgb(229, 236, 229)");
+            $(".signup").css("background", "#75e2e9");
         });
-
+    
         $(".btn").click(function () {
             $(".input").val("");
         });
-
     </script>
 </body>
 
