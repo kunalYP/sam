@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Vego - Nearby Showrooms</title>
+    <title>Vego - Your Showrooms</title>
 </head>
 <header id="sidebar ">
     <div class="w3-sidebar w3-bar-block w3-animate-left " style="display:none;z-index:5;width:80%;" id="mySidebar">
@@ -53,7 +53,6 @@
 
     </div>
 </header>
-
 <body>
     <header id="navbar">
         <div class="navigation-wrap bg-light start-header start-style">
@@ -141,7 +140,7 @@
             <div id="search">
                 <div class="fixedsearchbox">
                     <button class="btn-menu">
-                        <img src="images/search bar.png" alt="" style="float:left;width:30px">
+                  <img src="images/search bar.png" alt="" style="float:left;width:30px">
                     </button>
                     <input id="fixedsearch" type="text" placeholder="Search For Garage, Showroom or Location"
                         class="search">
@@ -151,55 +150,97 @@
 
 
         </div>
-
+      
         <section id="ownerlocation">
             <div class="alert" role="alert" data-toggle="modal" data-target="#locationmodal">
 
-                <i style="font-size:18px" class="fa fa-location-arrow" aria-hidden="true"></i>
-                <a id="ko"> Kunal - Parbhani 431512 <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <i style="font-size:18px" class="fa fa-location-arrow"  aria-hidden="true"></i>
+                <a id="ko" > Kunal - Parbhani 431512 <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
         </section>
 
     </header>
+    <!--
+  <section id="searchshowroommobile">
+        <div class="container-fluid showroommobile">
+            <div class="container">
+                <div class="row" id="searchrow">
+                    <div class="searchbox2">
+                        <button class="btn-menu">
+                            <img src="images/car-1681483-1427260.webp" class="img-fluid caricon" width="80px">
+                        </button>
+                        <input id="search" type="text" placeholder="Search By Vehicle Name" name="search"
+                            class="search">
+                        <button class="btn-search">
+                            <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+                        </button>
+                    </div>
+
+                </div>
+                <div class="row" id="searchrow">
+                    <div class="searchbox2">
+                        <button class="btn-menu">
+                            <img src="images/car-showroom-show-shop-sell-512.png" class="img-fluid caricon"
+                                width="80px">
+                        </button>
+                        <input id="search" type="text" placeholder="Search By Showroom Name" name="search"
+                            class="search">
+                        <button class="btn-search">
+                            <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+                        </button>
+                    </div>
+
+                </div>
+                <div class="row" id="searchrow">
+                    <div class="searchbox2">
+                        <button class="btn-menu">
+                            <img src="images/logo-tvs-motor-company-indonesia-logo-lambang-indonesia-7.png"
+                                class="img-fluid caricon" width="80px"> </button>
+                        <input id="search" type="text" placeholder="Search By Brand Name" name="search" class="search">
+                        <button class="btn-search">
+                            <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    -->
+
+
 
 
    
+    <section id="ownershowrooms">
+        <!-- <div class="container heading" style="margin-top:20px">
+            <h4><span></span> Garages <span>In Your City</span></h4>
+        </div> -->
+
+
+
+        
+
+
+
+
+        <div class="container heading" style="padding-top:30px;">
+            <h4><span>Your Showrooms</span> <span></span></h4>
+            <p>Kunal Pandharkar</p>
+        </div>
+
+     
+
         <section id="showroomscardsmobile">
-            <section id=" filteroption">
-                <div style="float:left;font-weight:750;font-size:13px;margin-top:15px;margin-left:10px">
-                    <p>20 Showrooms Found
-                    <p>
-                </div>
-                <div class="alert alert-light" role="alert" style="float:right">
-                    <button onclick="w3_openfilter()" class="btn btn-outline-dark btn-sm" style="width:110%"> filters <i
-                            class="fa fa-angle-down" aria-hidden="true"></i></button>
-                </div>
+          
     
-            </section>
-    
-            <header id="sidebar ">
-                <div class="w3-sidebar w3-bar-block w3-animate-bottom fixed" style="display:none;z-index:5;width:100%;"
-                    id="filtersidebar">
-                    <button class="w3-bar-item w3-button w3-large" onclick="w3_closefilter()"><i class="fa fa-filter"
-                            aria-hidden="true"></i> Filters<i class="fa fa-window-close" style="float: right;"
-                            aria-hidden="true"></i></button>
-                    <div class="filters text-center">
-                        <button style="border-radius: 12px;margin-top:10px;margin-right:10px"
-                            class="btn btn-outline-dark btn-sm"> Sort By Ratings</button>
-                        <button style="border-radius: 12px;margin-top:10px;margin-right:10px"
-                            class="btn btn-outline-dark btn-sm"> Show only Authorized</button>
-    
-                        <button style="border-radius: 12px;margin-top:10px" class="btn btn-outline-dark btn-sm"> Sort By
-                            Distance From You</button>
-    
-                    </div>
-    
-                </div>
-            </header>
     
             <div class="servicesverticalcards">
     
-                <div id="scrad">
+                <div id="scrad" onclick="location.href='showroomowner.html';">
                     <div class="row" id="showroomscardsrow" style="border-bottom:none">
     
                         <div class="col" id="simg">
@@ -240,49 +281,7 @@
         
                     </div>
                 </div>
-                <div id="scrad">
-                    <div class="row" id="showroomscardsrow" style="border-bottom:none">
-    
-                        <div class="col" id="simg">
-                            <img src="images/showroom1.jpg" alt="">
-                        </div>
-                        <div class="col" id="sinfo">
-                            <h3>Akshay Auto Tvs Dealer</h3>
-                           
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh Colony , Purna , Dist Parbhani </p>
-                        </div>
-        
-                    </div>
-                    <div class="row" id="showroomscardsrow2">
-        
-                        <div class="col" id="sstatus">
-                            <p>Open Now
-        
-                            </p>
-        
-        
-                        </div>
-                        <span id="bull">&#8226;</span>
-                        <div class="col" id="sdist">
-                            <p>2.5 KM
-                            </p>
-        
-                        </div>
-                        <span id="bull">&#8226;</span>
-                        <div class="col" id="bimg">
-                            <img src="images/Honda_Logo.svg" alt="">
-                        </div>
-        
-        
-                    </div>
-                </div>
-           
-                <div id="scrad">
+                <div id="scrad" onclick="location.href='showroomowner.html';">
                     <div class="row" id="showroomscardsrow" style="border-bottom:none">
     
                         <div class="col" id="simg">
@@ -324,7 +323,7 @@
                     </div>
                 </div>
            
-                <div id="scrad">
+                <div id="scrad" onclick="location.href='showroomowner.html';">
                     <div class="row" id="showroomscardsrow" style="border-bottom:none">
     
                         <div class="col" id="simg">
@@ -366,47 +365,6 @@
                     </div>
                 </div>
            
-                <div id="scrad">
-                    <div class="row" id="showroomscardsrow" style="border-bottom:none">
-    
-                        <div class="col" id="simg">
-                            <img src="images/showroom1.jpg" alt="">
-                        </div>
-                        <div class="col" id="sinfo">
-                            <h3>Akshay Auto Tvs Dealer</h3>
-                           
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh Colony , Purna , Dist Parbhani </p>
-                        </div>
-        
-                    </div>
-                    <div class="row" id="showroomscardsrow2">
-        
-                        <div class="col" id="sstatus">
-                            <p>Open Now
-        
-                            </p>
-        
-        
-                        </div>
-                        <span id="bull">&#8226;</span>
-                        <div class="col" id="sdist">
-                            <p>2.5 KM
-                            </p>
-        
-                        </div>
-                        <span id="bull">&#8226;</span>
-                        <div class="col" id="bimg">
-                            <img src="images/Honda_Logo.svg" alt="">
-                        </div>
-        
-        
-                    </div>
-                </div>
            
            
     
@@ -415,14 +373,10 @@
     
     
         </section>
- 
 
-    <section id="mobilefooter">
-        <footer class="mobilefooter" style="position: relative;">
-            <p class="footer-item mx-auto">© 2020-2021 VeGO</p>
-            <a style="margin: auto;" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    </section>
 
-        </footer>
+
     </section>
 
 
@@ -468,9 +422,9 @@
                     </form>
                 </div>
                 <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div> -->
             </div>
         </div>
     </div>
@@ -523,60 +477,41 @@
                     </form>
                 </div>
                 <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div> -->
             </div>
         </div>
     </div>
 
-    <section id="nearbyshowroomscardsdesktop">
+
+    <section id="garagesearchboxdesktop">
 
         <div class="container-fluid nearbyshowroom  ">
             <div class="container">
                 <div class="container-fluid services ">
-                    <h4><span style="color: white;">Search Nearby</span> Showrooms</h4>
+                    <h4><span style="color: white;">Search in Your </span>Showrooms</h4>
 
                 </div>
 
                 <div class="row">
-                    <div class="searchbox2">
-                        <button class="btn-menu nearby2">
-                            <img src="images/service3.png" class="img-fluid caricon" width="80px">
+                    <div class="searchbox2 s">
+                        <button class="btn-menu nearby">
+                            <img src="images/img_227234.png" class="img-fluid caricon" width="80px">
                         </button>
-                        <input id="search" type="text" placeholder="Search By Showorom Name" name="search"
-                            class="search">
+                        <input id="search" type="text" placeholder="Search Showroom " name="search" class="search">
                         <button class="btn-search nearby2">
-                            <img src="images/search bar.png" style="width:2.2rem;margin-top:-5px">
-                        </button>
-                    </div>
-                    <div class="searchbox2">
-                        <button class="btn-menu nearby2">
-                            <img src="images/4wh.png" class="img-fluid caricon" width="80px">
-                        </button>
-                        <input id="search" type="text" placeholder="Search By Vehicle Name" name="search"
-                            class="search">
-                        <button class="btn-search nearby2">
-                            <img src="images/search bar.png" style="width:2.2rem;margin-top:-5px">
+                            <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
                         </button>
                     </div>
 
+
                 </div>
-                <div class="row pt-4">
-                    <div class="searchbox2">
-                        <button class="btn-menu">
-                            <img src="images/logo-tvs-motor-company-indonesia-logo-lambang-indonesia-7.png"
-                                class="img-fluid caricon" width="80px">
-                        </button>
-                        <input id="search" type="text" placeholder="Search By Brand Name" name="search" class="search">
-                        <button class="btn-search nearby2">
-                            <img src="images/search bar.png" style="width:2.2rem;margin-top:-5px">
-                        </button>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
+
 
     <div class="container-fluid services" id="showroomtop">
         <h4>Showrooms <span>Nearby You</span></h4>
@@ -584,8 +519,7 @@
         <div class="d-flex justify-content-around ">
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
+                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -601,8 +535,10 @@
                                 class="img-fluid " width="80px">
                         </li>
                         <li class="list-group-item">+91 7774843561</li>
+                     
                         <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
+                        <li class="list-group-item"><span class="distance" style="color:black">Offline</span></li>
+
                         <a href="showroominfo.html">
                             <li class="list-group-item"><span class="distance">See Info <i
                                         class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
@@ -612,8 +548,7 @@
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom2.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
+                    <img class="card-img-top" src="images/showroom2.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -628,7 +563,7 @@
                         </li>
                         <li class="list-group-item">+91 7774843561</li>
                         <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
+                        <li class="list-group-item"><span class="distance" style="color:green">Online</span></li>
 
                         <a href="showroominfo.html">
                             <li class="list-group-item"><span class="distance">See Info <i
@@ -639,8 +574,7 @@
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom3.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
+                    <img class="card-img-top" src="images/showroom3.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -657,7 +591,7 @@
                             </li>
                             <li class="list-group-item">+91 7774843561</li>
                             <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                            <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
+                            <li class="list-group-item"><span class="distance" style="color:green">Online</span></li>
 
                             <a href="showroominfo.html">
                                 <li class="list-group-item"><span class="distance">See Info <i
@@ -668,8 +602,7 @@
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom4.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
+                    <img class="card-img-top" src="images/showroom4.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -686,7 +619,7 @@
                             </li>
                             <li class="list-group-item">+91 7774843561</li>
                             <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                            <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
+                            <li class="list-group-item"><span class="distance" style="color:green">Online</span></li>
 
                             <a href="showroominfo.html">
                                 <li class="list-group-item"><span class="distance">See Info <i
@@ -697,260 +630,33 @@
             </div>
 
         </div>
-        <div class="d-flex justify-content-around pt-4">
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
-                </div>
 
-                <div class="card-body">
-                    <h5 class="card-title">Showroom 1</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <li class="list-group-item"> <img
-                                src="images/logo-tvs-motor-company-indonesia-logo-lambang-indonesia-7.png"
-                                class="img-fluid" style="width:50%;height:20px">
-                        </li>
-                        <li class="list-group-item"> <img src="images/tvsbike.jpg" class="img-fluid "
-                                style="width:50%;height:60px">
-                            <h3>₹90,000</h3>
-                        </li>
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
-
-                        <a href="showroominfo.html">
-                            <li class="list-group-item"><span class="distance">See Info <i
-                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Showroom 2</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <li class="list-group-item"> <img src="images/Honda_Logo.svg" class="img-fluid "
-                                style="width:70%;height:20px">
-                        </li>
-                        <li class="list-group-item"> <img src="images/hondacar.jpg" class="img-fluid"
-                                style="width:50%;height:60px">
-                            <h3>₹3,90,000</h3>
-                        </li>
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
-
-                        <a href="showroominfo.html">
-                            <li class="list-group-item"><span class="distance">See Info <i
-                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Showroom 3</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <li class="list-group-item"> <img src="images/Mahindra-Logo-Vector.svg" class="img-fluid"
-                                style="width:50%;height:20px">
-                        </li>
-                        <li class="list-group-item"> <img src="images/mahindratractor.jpg" class="img-fluid"
-                                style="width:50%;height:60px">
-                            <h3>₹5,90,000</h3>
-                        </li>
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
-
-                        <a href="showroominfo.html">
-                            <li class="list-group-item"><span class="distance">See Info <i
-                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Showroom 4</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <li class="list-group-item"> <img src="images/audi-vector-4.png" class="img-fluid "
-                                style="width:50%;height:20px">
-                        </li>
-                        <li class="list-group-item"> <img src="images/audicar.webp" class="img-fluid "
-                                style="width:50%;height:60px">
-                            <h3>₹9,00,00,000</h3>
-                        </li>
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
-
-                        <a href="showroominfo.html">
-                            <li class="list-group-item"><span class="distance">See Info <i
-                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <div class="d-flex justify-content-around pt-4">
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Showroom 1</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <li class="list-group-item"> <img
-                                src="images/logo-tvs-motor-company-indonesia-logo-lambang-indonesia-7.png"
-                                class="img-fluid " width="80px">
-                        </li>
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
-
-                        <a href="showroominfo.html">
-                            <li class="list-group-item"><span class="distance">See Info <i
-                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom2.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title"> Showroom 2</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <li class="list-group-item"> <img src="images/Honda_Logo.svg" class="img-fluid " width="40px">
-                        </li>
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                                              <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
-
-                        <a href="showroominfo.html">
-                            <li class="list-group-item"><span class="distance">See Info <i
-                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom3.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Showroom 3</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <ul class="list-group list-group-flush pt-2">
-                            <li class="list-group-item"> <img src="images/Mahindra-Logo-Vector.svg" class="img-fluid "
-                                    width="60px">
-                            </li>
-                            <li class="list-group-item">+91 7774843561</li>
-                            <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                            <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
-
-                            <a href="showroominfo.html">
-                                <li class="list-group-item"><span class="distance">See Info <i
-                                            class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
-                            </a>
-                        </ul>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom4.jpg" alt="Card image cap"
-                        style="width:100%;height:150px">
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Showroom 4</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <ul class="list-group list-group-flush pt-2">
-                            <li class="list-group-item"> <img src="images/audi-vector-4.png" class="img-fluid"
-                                    width="60px">
-                            </li>
-                            <li class="list-group-item">+91 7774843561</li>
-                            <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                            <li class="list-group-item"><span class="distance" style="color:black">2.5 KM</span></li>
-
-                            <a href="showroominfo.html">
-                                <li class="list-group-item"><span class="distance">See Info <i
-                                            class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
-                            </a>
-                        </ul>
-                </div>
-            </div>
-
-        </div>
-        <a href="" class="badge badge-light" style="float:right;">See More <i class="fa fa-angle-double-right"
-                aria-hidden="true"></i></a>
     </div>
 
+    
 
+    <a style="text-decoration: none; color:black;" href="registershowroom.html" data-name="Garage 1">
+        <div class="row bg-white" id="showroomscardsrow" style="border-left:none;border-right:none;">
+
+            <div class="col circle1 text-center">
+                <div class="row" style="margin-top:4%;margin-left:10%;margin-right:10%;margin-bottom:5%"
+                    onclick="location.href='registergarage.html';">
+
+                    <button class="btn btn-block" id="subjectadd" style="background-color: rgb(147, 20, 220);"><i
+                            class="fa fa-plus" aria-hidden="true"></i> Add New Showroom </button>
+
+                </div>
+                <!-- .top-info -->
+            </div>
+        </div>
+    </a>
+    <section id="mobilefooter">
+        <footer class="mobilefooter" style="position: relative;">
+            <p class="footer-item mx-auto">© 2020-2021 VeGO</p>
+            <a style="margin: auto;" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+        </footer>
+    </section>
     <footer class="footer text-muted" id="bigfooter">
 
 
@@ -1118,18 +824,7 @@
             $(".input").val("");
         });
 
-        window.onscroll = function () { myFunction() };
 
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
         function w3_open() {
 
             document.getElementById("mySidebar").style.display = "block";

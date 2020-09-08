@@ -7,15 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Vego - Home </title>
+    <title>Vego - About Us </title>
 </head>
+<header id="sidebar ">
+    <div class="w3-sidebar w3-bar-block w3-animate-left " style="display:none;z-index:5;width:80%;" id="mySidebar">
+        <a class="w3-bar-item"  onclick="w3_close()">
+            <i class="fa fa-window-close" style="float: right;" aria-hidden="true"></i></a>
 
+        <a href="userprofile.html" class="w3-bar-item " style="color:black"><img src="images/user.png" style="width:50px"
+                alt=""> Hello User !</a>
+        <div class="dropdown-divider" style="margin-top:20px"></div>
+        <a style="color:black" href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Home</a>
+        <!---<a href="#" class="w3-bar-item w3-button">Your Orders </a> !-->
+
+        <div class="dropdown-divider"></div>
+
+        <a style="color:black" href="emergencyservice.html" class="w3-bar-item "><i class="fa fa-exclamation-triangle"
+                aria-hidden="true" style="margin-right: 1rem;"></i> Emergency Service</a>
+        <a style="color:black" href="vehcilecomparison.html" class="w3-bar-item "><i class="fa fa-balance-scale" aria-hidden="true"
+                style="margin-right: 1rem;"></i>Compare Vehicles</a>
+        <a style="color:black" href="nearbyshowrooms.html" class="w3-bar-item "> <i class="fa fa-car" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Nearby Showrooms & Shops</a>
+        <a style="color:black" href="nearbygarages.html" class="w3-bar-item "><i class="fa fa-cogs" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Nearby Garages & Workshops</a>
+        <div class="dropdown-divider"></div>
+        <a style="color:black" href="workwithus.html" class="w3-bar-item "><i class="fa fa-handshake-o" aria-hidden="true"
+                style="margin-right: 1rem;"></i>Work With Us</a>
+        <a style="color:black" href="aboutus.html" class="w3-bar-item ">
+            <img src="images/about us.png" style="width:18px;margin-right: 0.7rem;" alt="">
+            About Us</a>
+        <a style="color:black" href="contactus.html" class="w3-bar-item"><i class="fa fa-phone-square" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Contact Us</a>
+        <div class="dropdown-divider"></div>
+        <a style="color:black" href="login.html" class="w3-bar-item"><i class="fa fa-sign-in" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Login/Sign Up</a>
+
+        <div class="dropdown-divider"></div>
+
+
+
+    </div>
+</header>
 <body>
-    <header>
+    <header id="navbar">
         <div class="navigation-wrap bg-light start-header start-style">
             <div class="container">
                 <div class="row">
@@ -83,10 +121,48 @@
             </div>
         </div>
     </header>
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+    <header id="mobilenavbar">
+        <!-- Just an image -->
+        <nav class="navbar  navbar-light">
+            <button class="navbar-toggler menu-icon" type="button" data-toggle="collapse" aria-expanded="false"
+                onclick="w3_open()" aria-label="Toggle navigation" style="border:none;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="85" height="45" alt="">
+            </a>
+
+        </nav>
+        <div class="container sticky-top" id="myHeader">
+
+            <div id="search">
+                <div class="fixedsearchbox">
+                    <button class="btn-menu">
+                  <img src="images/search bar.png" alt="" style="float:left;width:30px">
+                    </button>
+                    <input id="fixedsearch" type="text" placeholder="Search For Garage, Showroom or Location"
+                        class="search">
+                </div>
+            </div>
 
 
-    <br> <br>
-    <div class="container-fluid mt-4 pt-4">
+
+        </div>
+      
+        <section id="ownerlocation">
+            <div class="alert" role="alert" data-toggle="modal" data-target="#locationmodal">
+
+                <i style="font-size:18px" class="fa fa-location-arrow"  aria-hidden="true"></i>
+                <a id="ko" > Kunal - Parbhani 431512 <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
+    </header>
+
+    
+    <div class="container-fluid" id="aboutuscorousel">
         <div class="row">
             <div class="col-sm-6">
                 <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
@@ -139,7 +215,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="servicesaboutus">
 
                 <div class="row  features pl-4">
                     <div class="icon-box col-lg-11 ">
@@ -172,6 +248,7 @@
     <div class="container-fluid services">
         <h4><span>About</span> Company <span></span></h4>
     </div>
+
     <div class="container aboutus">
 
         <div class="row">
@@ -197,54 +274,112 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" >
         <div class="container-fluid services">
             <h4><span>Our</span> Values <span></span></h4>
         </div>
-        <div class="row pt-4">
-            <div class="col-lg-3">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon">
-                        <img src="images/value.svg" width="090px" alt="">
-                    </div>
-                    <h3>Support</h3>
+        <div class="container heading" style="padding-top:30px;">
+            <h4><span>Our</span> Values<span></span></h4>
+           
+        </div>
+   
+        <div class="aboutus-values pt-3" id="scontact">
+            <div class="abt-value">
+                <div class="abt-value-img">
+                    <img src="images/connected.png" alt="">
+                </div>
+                <div class="abt-value-text1">
+                    <h5>Connected</h5>
+                </div>
+                <div class="abt-value-text2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati odit culpa deleniti quis dicta
+                        ea.</p>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon">
-                        <img src="images/value.svg" width="090px" alt="">
-                    </div>
-                    <h3>TeamWork</h3>
+    
+    
+            <div class="abt-value">
+                <div class="abt-value-img">
+                    <img src="images/support.png" alt="">
+                </div>
+                <div class="abt-value-text1">
+                    <h5>Support</h5>
+                </div>
+                <div class="abt-value-text2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati odit culpa deleniti quis dicta
+                        ea.</p>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon">
-                        <img src="images/value.svg" width="090px" alt="">
-                    </div>
-                    <h3>Ownership</h3>
+    
+    
+            <div class="abt-value">
+                <div class="abt-value-img">
+                    <img src="images/teamwork.png" alt="">
+                </div>
+                <div class="abt-value-text1">
+                    <h5>Teamwork</h5>
+                </div>
+                <div class="abt-value-text2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati odit culpa deleniti quis dicta
+                        ea.</p>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon">
-                        <img src="images/value.svg" width="090px" alt="">
-                    </div>
-                    <h3>Future</h3>
+    
+    
+            <div class="abt-value">
+                <div class="abt-value-img">
+                    <img src="images/ownership.png" alt="">
+                </div>
+                <div class="abt-value-text1">
+                    <h5>Ownership</h5>
+                </div>
+                <div class="abt-value-text2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati odit culpa deleniti quis dicta
+                        ea.</p>
+                </div>
+            </div>
+    
+    
+            <div class="abt-value">
+                <div class="abt-value-img">
+                    <img src="images/faster service.png" alt="">
+                </div>
+                <div class="abt-value-text1">
+                    <h5>Faster Service</h5>
+                </div>
+                <div class="abt-value-text2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati odit culpa deleniti quis dicta
+                        ea.</p>
+                </div>
+            </div>
+    
+    
+            <div class="abt-value">
+                <div class="abt-value-img">
+                    <img src="images/future.png" alt="">
+                </div>
+                <div class="abt-value-text1">
+                    <h5>Future</h5>
+                </div>
+                <div class="abt-value-text2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati odit culpa deleniti quis dicta
+                        ea.</p>
                 </div>
             </div>
         </div>
-    </div><br>
+    </div>
 
     <section>
-        <section class="team-page-section">
+        <section class="team-page-section" id="team">
             <div class="container">
                 <!-- Sec Title -->
                 <div class="sec-title centered">
 
                     <div class="container-fluid services text-center ">
                         <h4><span>Our</span> Team <span></span></h4>
+                    </div>
+                    <div class="container heading" style="padding-top:30px;">
+                        <h4><span>Our</span> Team<span></span></h4>
                     </div>
                     <h2>We Are The Makers !</h2>
                 </div>
@@ -377,90 +512,105 @@
         <br>
      
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">Login/Register</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                    <div class="wrapper">
-                        <div class="container">
-                            <div class="login">Log In</div>
-                            <div class="signup">Sign Up</div>
-
-
-                            <div class="login-form">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Mobile No</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter Mobile Number">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your
-                                            number with anyone else.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Password">
-                                        <a href="">Forgot Password ?</a>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-danger btn-block">Login</button>
-                                </form>
-                            </div>
-
-                            <div class="signup-form">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Name</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Contact No</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Mobile Number">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your
-                                            Number with anyone else.</small>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">New Password</label>
-                                        <input type="password" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter New Password">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Confirm Password</label>
-                                        <input type="password" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Confirm Password">
-                                    </div>
-                                    <button type="submit" class="btn btn-danger btn-block">Create Account</button>
-                                </form>
-                            </div>
-
-
-
-                        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-
-
-
-
-
-
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email ID">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+    
+                            <button type="submit" class="btn btn-dark btn-signin" style="width: 100%;">Sign In</button>
+                            <hr>
+                            <div class="form-group">
+                                <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Don't Have an Account ? Register
+                                </a>
+                            </div>
+    
+                            <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google" aria-hidden="true"></i>
+                                Sign In with Google</button>
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
+                                    aria-hidden="true"></i> Sign In with Facebook </button>
+    
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-dark">Save changes</button>
+                    </div> -->
                 </div>
             </div>
         </div>
-    </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email ID">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Mobile Number">
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Confirm Password">
+                            </div>
+    
+                            <button type="submit" class="btn btn-dark btn-signin"
+                                style="width: 100%; margin-bottom: 10px;">Register</button>
+    
+                            <div class="form-group">
+    
+                                <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Already Have an Account ? Sign
+                                    In
+                                </a>
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google" aria-hidden="true"></i>
+                                Sign In with Google</button>
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
+                                    aria-hidden="true"></i> Sign In with Facebook </button>
+    
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-dark">Save changes</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
     <footer class="footer text-muted">
 
 
@@ -625,6 +775,21 @@
     $(".btn").click(function () {
         $(".input").val("");
     });
+    function w3_open() {
+   
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+        var x = document.getElementById("search");
+        x.style.display = "none";
+        
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+        var x = document.getElementById("search");
+        x.style.display = "block";
+    }
 
 </script>
 

@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Vego - Register Showroom </title>
+    <title>Vego - Nearby Showrooms</title>
 </head>
 <header id="sidebar ">
     <div class="w3-sidebar w3-bar-block w3-animate-left " style="display:none;z-index:5;width:80%;" id="mySidebar">
-        <a class="w3-bar-item"  onclick="w3_close()">
+        <a class="w3-bar-item" onclick="w3_close()">
             <i class="fa fa-window-close" style="float: right;" aria-hidden="true"></i></a>
 
-        <a href="userprofile.html" class="w3-bar-item " style="color:black"><img src="images/user.png" style="width:50px"
-                alt=""> Hello User !</a>
+        <a href="userprofile.html" class="w3-bar-item " style="color:black"><img src="images/user.png"
+                style="width:50px" alt=""> Hello User !</a>
         <div class="dropdown-divider" style="margin-top:20px"></div>
         <a style="color:black" href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"
                 style="margin-right: 1rem;"></i> Home</a>
@@ -29,20 +29,20 @@
 
         <a style="color:black" href="emergencyservice.html" class="w3-bar-item "><i class="fa fa-exclamation-triangle"
                 aria-hidden="true" style="margin-right: 1rem;"></i> Emergency Service</a>
-        <a style="color:black" href="vehcilecomparison.html" class="w3-bar-item "><i class="fa fa-balance-scale" aria-hidden="true"
-                style="margin-right: 1rem;"></i>Compare Vehicles</a>
+        <a style="color:black" href="vehcilecomparison.html" class="w3-bar-item "><i class="fa fa-balance-scale"
+                aria-hidden="true" style="margin-right: 1rem;"></i>Compare Vehicles</a>
         <a style="color:black" href="nearbyshowrooms.html" class="w3-bar-item "> <i class="fa fa-car" aria-hidden="true"
                 style="margin-right: 1rem;"></i> Nearby Showrooms & Shops</a>
         <a style="color:black" href="nearbygarages.html" class="w3-bar-item "><i class="fa fa-cogs" aria-hidden="true"
                 style="margin-right: 1rem;"></i> Nearby Garages & Workshops</a>
         <div class="dropdown-divider"></div>
-        <a style="color:black" href="workwithus.html" class="w3-bar-item "><i class="fa fa-handshake-o" aria-hidden="true"
-                style="margin-right: 1rem;"></i>Work With Us</a>
+        <a style="color:black" href="workwithus.html" class="w3-bar-item "><i class="fa fa-handshake-o"
+                aria-hidden="true" style="margin-right: 1rem;"></i>Work With Us</a>
         <a style="color:black" href="aboutus.html" class="w3-bar-item ">
             <img src="images/about us.png" style="width:18px;margin-right: 0.7rem;" alt="">
             About Us</a>
-        <a style="color:black" href="contactus.html" class="w3-bar-item"><i class="fa fa-phone-square" aria-hidden="true"
-                style="margin-right: 1rem;"></i> Contact Us</a>
+        <a style="color:black" href="contactus.html" class="w3-bar-item"><i class="fa fa-phone-square"
+                aria-hidden="true" style="margin-right: 1rem;"></i> Contact Us</a>
         <div class="dropdown-divider"></div>
         <a style="color:black" href="login.html" class="w3-bar-item"><i class="fa fa-sign-in" aria-hidden="true"
                 style="margin-right: 1rem;"></i> Login/Sign Up</a>
@@ -54,75 +54,162 @@
     </div>
 </header>
 
+<style>
+    /*custom font*/
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+    /*basic reset*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        height: 100%;
+        /*Image only BG fallback*/
+
+        /*background = gradient + image pattern combo*/
+        background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+    }
+
+    body {
+        font-family: montserrat, arial, verdana;
+    }
+
+    /*form styles*/
+    #msform {
+        width: 400px;
+        margin: 50px auto;
+        text-align: center;
+        position: relative;
+    }
+
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 10%;
+
+        /*stacking fieldsets above each other*/
+        position: relative;
+    }
+
+    /*Hide all except first fieldset*/
+    #msform fieldset:not(:first-of-type) {
+        display: none;
+    }
+
+    /*inputs*/
+    #msform input,
+    #msform textarea {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: montserrat;
+        color: #2c3e50;
+        font-size: 13px;
+    }
+
+    /*buttons*/
+    #msform .action-button {
+        width: 100px;
+        background: #27ae60;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+
+    #msform .action-button:hover,
+    #msform .action-button:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+    }
+
+    /*headings*/
+    .fs-title {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    .fs-subtitle {
+        font-weight: normal;
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    /*progressbar*/
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        /*CSS counters to number the steps*/
+        counter-reset: step;
+    }
+
+    #progressbar li {
+        list-style-type: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 9px;
+        width: 33.33%;
+        float: left;
+        position: relative;
+    }
+
+    #progressbar li:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 20px;
+        line-height: 20px;
+        display: block;
+        font-size: 10px;
+        color: #333;
+        background: white;
+        border-radius: 3px;
+        margin: 0 auto 5px auto;
+    }
+
+    /*progressbar connectors*/
+    #progressbar li:after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: white;
+        position: absolute;
+        left: -50%;
+        top: 9px;
+        z-index: -1;
+        /*put it behind the numbers*/
+    }
+
+    #progressbar li:first-child:after {
+        /*connector not needed before the first step*/
+        content: none;
+    }
+
+    /*marking active/completed steps green*/
+    /*The number of the step and the connector before it = green*/
+    #progressbar li.active:before,
+    #progressbar li.active:after {
+        background: #27ae60;
+        color: white;
+    }
+</style>
+
 <body>
-    <header id="navbar">
-        <div class="navigation-wrap bg-light start-header start-style">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-md navbar-light">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="brand">
-                                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
-                            </div>
-
-
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto py-4 py-md-0">
-
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-                                            role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="emergencyservice.html">Emergency Service</a>
-                                            <a class="dropdown-item" href="nearbyshowrooms.html">Nearby Showrooms &
-                                                Shops</a>
-                                            <a class="dropdown-item" href="vehcilecomparison.html">Compare Vehicles</a>
-                                            <a class="dropdown-item" href="nearbygarages.html">Nearby Garages &
-                                                Workshops</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link btn" data-toggle="modal" data-target="#myModal">Login /
-                                            Signup</a>
-                                    </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-                                            role="button" aria-haspopup="true" aria-expanded="false">Work With us</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="registergarage.html">Register Garage</a>
-                                            <a class="dropdown-item" href="registershowroom.html">Register Vehicle
-                                                Showroom and Shop</a>
-                                            <a class="dropdown-item" href="registerservicecenter.html">Register Service
-                                                Center</a>
-
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="contactus.html">Contact Us</a>
-                                    </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="aboutus.html">About Us</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    
     <header id="mobilenavbar">
         <!-- Just an image -->
         <nav class="navbar  navbar-light">
@@ -162,128 +249,59 @@
 
     </header>
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up">Register Your Showroom With Us.</h1>
-                    <h2 data-aos="fade-up" class="" data-aos-delay="400">Bring Your Garage Online And Available For
-                        Customers For 24 Hr.</h2>
-                    <div data-aos="fade-up" data-aos-delay="800">
-                        <a href="showroomregform.html" class="btn-get-started scrollto">Register Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-                    <img src="images/showroom vector.jpg" class="img-fluid animated" alt="">
-                </div>
-            </div>
-        </div>
+    <!-- multistep form -->
+    <form id="msform">
+        <!-- progressbar -->
+        <ul id="progressbar">
+            <li class="active">Account Setup</li>
+            <li>Social Profiles</li>
+            <li>Personal Details</li>
+        </ul>
+        <!-- fieldsets -->
+        <fieldset>
+            <h2 class="fs-title">Create your account</h2>
+            <h3 class="fs-subtitle">This is step 1</h3>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Password" />
+            <input type="password" name="cpass" placeholder="Confirm Password" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Social Profiles</h2>
+            <h3 class="fs-subtitle">Your presence on the social network</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="gplus" placeholder="Google Plus" />
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+        </fieldset>
+    </form>
 
-    </section><!-- End Hero -->
-    <div class="container-fluid heading" style="margin-top:10%">
-        <h4><span>Our</span> Features <span></span></h4>
 
-    </div>
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-        <div class="container">
 
-            <div class="container-fluid services">
-                <h4><span>What We </span> Provide <span>To You</span></h4>
-                <p> We cater an array of high-end products for Education and Government Sector </p>
-            </div>
 
-            <div class="row" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/bring showroom online.png" style="height:40px;width:45px" alt="">
-                        &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Bring Your Showroom Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/sell vehicle.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Sell Vehicles Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/nearby customers.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get All Nearby Customer To You</a></h3>
-                    </div>
-                </div>
 
-            </div>
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/car3.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Allow Customers To See Vehicles and Rates Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/more profit.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Make More Profit</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/faster service.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Faster Service</a></h3>
-                    </div>
-                </div>
 
-            </div>
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/nearby customers.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Allow Customers To Find You Easily</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/24_7 working.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">24 X 7 Working</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/feedback.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get Customers Feedback</a></h3>
-                    </div>
-                </div>
 
-            </div>
 
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/logo.png" style="height:40px;width:55px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Be Service Provider On Vego</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/get business app.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get Business App To Manage Your Data</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/yearly maintenance.png" style="height:40px;width:45px" alt="">
-                        &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Yearly Maintainance : ₹1499</a></h3>
-                    </div>
-                </div>
+    <section id="mobilefooter">
+        <footer class="mobilefooter" style="position: relative;">
+            <p class="footer-item mx-auto">© 2020-2021 VeGO</p>
+            <a style="margin: auto;" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
-            </div>
-        </div>
-    </section><!-- End Features Section -->
+        </footer>
+    </section>
 
 
     <!-- Modal -->
@@ -389,27 +407,9 @@
             </div>
         </div>
     </div>
-    <hr>
-    <div class="container">
-        <div class="row" style="margin-top:4%;margin-left:10%;margin-right:10%;margin-bottom:5%"
-            onclick="location.href='showroomregform.html';">
-
-            <button class="btn btn-block" id="clickhereform"> Click Here To Fill Registration Form </button>
-
-        </div>
-    </div>
 
 
 
-
-
-    <section id="mobilefooter">
-        <footer class="mobilefooter" style="position: relative;">
-            <p class="footer-item mx-auto">© 2020-2021 VeGO</p>
-            <a style="margin: auto;" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-
-        </footer>
-    </section>
 
 
     <footer class="footer text-muted" id="bigfooter">
@@ -543,8 +543,8 @@
         </div>
         <!-- Copyright -->
     </footer>
-
     <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_closefilter()" style="cursor:pointer" id="myOverlay"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -557,46 +557,101 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script>
+        //jQuery time
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating; //flag to prevent quick multi-click glitches
+
+        $(".next").click(function () {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate(
+                { opacity: 0 },
+                {
+                    step: function (now, mx) {
+                        //as the opacity of current_fs reduces to 0 - stored in "now"
+                        //1. scale current_fs down to 80%
+                        scale = 1 - (1 - now) * 0.2;
+                        //2. bring next_fs from the right(50%)
+                        left = now * 50 + "%";
+                        //3. increase opacity of next_fs to 1 as it moves in
+                        opacity = 1 - now;
+                        current_fs.css({
+                            transform: "scale(" + scale + ")",
+                            position: "absolute"
+                        });
+                        next_fs.css({ left: left, opacity: opacity });
+                    },
+                    duration: 800,
+                    complete: function () {
+                        current_fs.hide();
+                        animating = false;
+                    },
+                    //this comes from the custom easing plugin
+                    easing: "easeInOutBack"
+                }
+            );
+        });
+
+        $(".previous").click(function () {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+
+            //de-activate current step on progressbar
+            $("#progressbar li")
+                .eq($("fieldset").index(current_fs))
+                .removeClass("active");
+
+            //show the previous fieldset
+            previous_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate(
+                { opacity: 0 },
+                {
+                    step: function (now, mx) {
+                        //as the opacity of current_fs reduces to 0 - stored in "now"
+                        //1. scale previous_fs from 80% to 100%
+                        scale = 0.8 + (1 - now) * 0.2;
+                        //2. take current_fs to the right(50%) - from 0%
+                        left = (1 - now) * 50 + "%";
+                        //3. increase opacity of previous_fs to 1 as it moves in
+                        opacity = 1 - now;
+                        current_fs.css({ left: left });
+                        previous_fs.css({
+                            transform: "scale(" + scale + ")",
+                            opacity: opacity
+                        });
+                    },
+                    duration: 800,
+                    complete: function () {
+                        current_fs.hide();
+                        animating = false;
+                    },
+                    //this comes from the custom easing plugin
+                    easing: "easeInOutBack"
+                }
+            );
+        });
+
+        $(".submit").click(function () {
+            return false;
+        });
+
+    </script>
 </body>
-
-<script>
-
-    $(".signup-form").hide();
-    $(".signup").css("background", "none");
-
-    $(".login").click(function () {
-        $(".signup-form").hide();
-        $(".login-form").show();
-        $(".signup").css("background", "none");
-        $(".login").css("background", "#75e2e9");
-    });
-
-    $(".signup").click(function () {
-        $(".signup-form").show();
-        $(".login-form").hide();
-        $(".login").css("background", "none");
-        $(".signup").css("background", "#75e2e9");
-    });
-
-    $(".btn").click(function () {
-        $(".input").val("");
-    });
-    function w3_open() {
-
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-        var x = document.getElementById("search");
-        x.style.display = "none";
-
-    }
-
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-        var x = document.getElementById("search");
-        x.style.display = "block";
-    }
-
-</script>
 
 </html>

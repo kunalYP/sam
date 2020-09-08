@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Bootstrap CSS -->
-
+  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Vego - Register Showroom </title>
+    <title>Vego - Vehicles in Showroom</title>
 </head>
+
 <header id="sidebar ">
     <div class="w3-sidebar w3-bar-block w3-animate-left " style="display:none;z-index:5;width:80%;" id="mySidebar">
         <a class="w3-bar-item"  onclick="w3_close()">
@@ -53,17 +54,17 @@
 
     </div>
 </header>
-
 <body>
+
     <header id="navbar">
         <div class="navigation-wrap bg-light start-header start-style">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <nav class="navbar navbar-expand-md navbar-light">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="w3_open()"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="brand">
@@ -123,6 +124,25 @@
             </div>
         </div>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <header id="mobilenavbar">
         <!-- Just an image -->
         <nav class="navbar  navbar-light">
@@ -143,7 +163,7 @@
                     <button class="btn-menu">
                         <img src="images/search bar.png" alt="" style="float:left;width:30px">
                     </button>
-                    <input id="fixedsearch" type="text" placeholder="Search For Garage, Showroom or Location"
+                    <input id="fixedsearch" type="text" placeholder="Search Vehicles"
                         class="search">
                 </div>
             </div>
@@ -162,243 +182,197 @@
 
     </header>
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
 
-        <div class="container">
+   
+
+
+
+    <div class="container-fluid showroominfo">
+        <div class="container" id="vehiclecardsshowroom">
+            <div class="container-fluid services ">
+                <h4><span style="color: white;">Search</span> Vehicles <span style="color: white;">In Showrrom</span>
+                </h4>
+
+            </div>
+
             <div class="row">
-                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up">Register Your Showroom With Us.</h1>
-                    <h2 data-aos="fade-up" class="" data-aos-delay="400">Bring Your Garage Online And Available For
-                        Customers For 24 Hr.</h2>
-                    <div data-aos="fade-up" data-aos-delay="800">
-                        <a href="showroomregform.html" class="btn-get-started scrollto">Register Now</a>
-                    </div>
+                <div class="searchbox2 sv">
+                    <button class="btn-menu nearby2">
+                        <img src="images/2wh.png" class="img-fluid caricon" width="70px">
+                    </button>
+                    <input id="search" type="text" placeholder="Search Vehicle in This Showroom" name="search"
+                        class="search">
+                    <button class="btn-search nearby2">
+                        <img src="images/search bar.png" style="width:2.2rem;margin-top:-5px">
+                    </button>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-                    <img src="images/showroom vector.jpg" class="img-fluid animated" alt="">
-                </div>
+
+
             </div>
+
+
         </div>
 
-    </section><!-- End Hero -->
-    <div class="container-fluid heading" style="margin-top:10%">
-        <h4><span>Our</span> Features <span></span></h4>
-
     </div>
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
+
+
+
+
+
+
+
+
+
+
+    <section>
         <div class="container">
+            <div class="row" id="vehcards">
+                <div class="col" id="vehimagecol"  onclick="location.href='vehicleinfo.html';">
+                    <div class="vehicleimg">
+                        <img src="images/car1.png" alt="">
+                    </div>
+                    <span class="badge badge-warning">3 Offers</span>
+                </div>
+                <div class="col" id="vehinfocol">
+                    <div class="vehname">
+                        <h5>Honda City 200</h5>
+                    </div>
+                    <div class="vehyr">
+                        <p>2001</p>
+                    </div>
+                    <div class="modalveh">
+                        <p>Top Modal</p>
+                    </div>
+                    <div class="petrolordiesel">
+                        <p>Diesel</p>
+                    </div>
+                    <div class="enginecc">
+                        <p>20000cc</p>
+                    </div>
+                    <div class="ratingsveh">
+                        <p>
+                            <span class="badge badge-success">
+                                4.5 <span class="fa fa-star"></span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="vehprice">
+                        <h5>₹90.25 Lakh </h5>
 
-            <div class="container-fluid services">
-                <h4><span>What We </span> Provide <span>To You</span></h4>
-                <p> We cater an array of high-end products for Education and Government Sector </p>
+                    </div>
+                </div>
+                
             </div>
+            <div class="row pt-2" id="vehcards">
+                <div class="col" id="vehimagecol">
+                    <div class="vehicleimg">
+                        <img src="images/car3.png" alt="">
+                    </div>
+                  
+                </div>
+                <div class="col" id="vehinfocol">
+                    <div class="vehname">
+                        <h5>Honda City 200</h5>
+                    </div>
+                    <div class="vehyr">
+                        <p>2001</p>
+                    </div>
+                    <div class="modalveh">
+                        <p>Top Modal</p>
+                    </div>
+                    <div class="petrolordiesel">
+                        <p>Diesel</p>
+                    </div>
+                    <div class="enginecc">
+                        <p>20000cc</p>
+                    </div>
+                    <div class="ratingsveh">
+                        <p>
+                            <span class="badge badge-success">
+                                4.5 <span class="fa fa-star"></span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="vehprice">
+                        <h5>₹90.25 Lakh </h5>
 
-            <div class="row" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/bring showroom online.png" style="height:40px;width:45px" alt="">
-                        &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Bring Your Showroom Online</a></h3>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/sell vehicle.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Sell Vehicles Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/nearby customers.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get All Nearby Customer To You</a></h3>
-                    </div>
-                </div>
-
             </div>
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/car3.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Allow Customers To See Vehicles and Rates Online</a></h3>
+            <div class="row pt-2" id="vehcards">
+                <div class="col" id="vehimagecol">
+                    <div class="vehicleimg">
+                      <img src="images/car4.png" alt="">
+                    </div>
+                    <span class="badge badge-warning">3 Offers</span>
+                </div>
+                <div class="col" id="vehinfocol">
+                    <div class="vehname">
+                        <h5>Honda City 200</h5>
+                    </div>
+                    <div class="vehyr">
+                        <p>2001</p>
+                    </div>
+                    <div class="modalveh">
+                        <p>Top Modal</p>
+                    </div>
+                    <div class="petrolordiesel">
+                        <p>Diesel</p>
+                    </div>
+                    <div class="enginecc">
+                        <p>20000cc</p>
+                    </div>
+                    <div class="ratingsveh">
+                        <p> 
+                            <span class="badge badge-success">
+                               4.5 <span class="fa fa-star"></span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="vehprice">
+                        <h5>₹90.25 Lakh </h5>
+                      
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/more profit.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Make More Profit</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/faster service.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Faster Service</a></h3>
-                    </div>
-                </div>
-
             </div>
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/nearby customers.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Allow Customers To Find You Easily</a></h3>
+            <div class="row pt-2" id="vehcards">
+                <div class="col" id="vehimagecol">
+                    <div class="vehicleimg">
+                      <img src="images/car5.jpg" alt="">
+                    </div>
+      
+                </div>
+                <div class="col" id="vehinfocol">
+                    <div class="vehname">
+                        <h5>Honda City 200</h5>
+                    </div>
+                    <div class="vehyr">
+                        <p>2001</p>
+                    </div>
+                    <div class="modalveh">
+                        <p>Top Modal</p>
+                    </div>
+                    <div class="petrolordiesel">
+                        <p>Diesel</p>
+                    </div>
+                    <div class="enginecc">
+                        <p>20000cc</p>
+                    </div>
+                    <div class="ratingsveh">
+                        <p> 
+                            <span class="badge badge-success">
+                               4.5 <span class="fa fa-star"></span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="vehprice">
+                        <h5>₹90.25 Lakh </h5>
+                      
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/24_7 working.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">24 X 7 Working</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/feedback.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get Customers Feedback</a></h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/logo.png" style="height:40px;width:55px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Be Service Provider On Vego</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/get business app.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get Business App To Manage Your Data</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/yearly maintenance.png" style="height:40px;width:45px" alt="">
-                        &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Yearly Maintainance : ₹1499</a></h3>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section><!-- End Features Section -->
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin" style="width: 100%;">Sign In</button>
-                        <hr>
-                        <div class="form-group">
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Don't Have
-                                an Account ? Register
-                            </a>
-                        </div>
-
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
-                                aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
-
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Confirm Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin"
-                            style="width: 100%; margin-bottom: 10px;">Register</button>
-
-                        <div class="form-group">
-
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Already Have
-                                an Account ? Sign
-                                In
-                            </a>
-                        </div>
-                        <hr>
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
-                                aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
-
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
             </div>
         </div>
-    </div>
-    <hr>
-    <div class="container">
-        <div class="row" style="margin-top:4%;margin-left:10%;margin-right:10%;margin-bottom:5%"
-            onclick="location.href='showroomregform.html';">
-
-            <button class="btn btn-block" id="clickhereform"> Click Here To Fill Registration Form </button>
-
-        </div>
-    </div>
-
+    </section>
 
 
 
@@ -409,7 +383,118 @@
             <a style="margin: auto;" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
         </footer>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email ID">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+
+                            <button type="submit" class="btn btn-dark btn-signin" style="width: 100%;">Sign In</button>
+                            <hr>
+                            <div class="form-group">
+                                <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Don't
+                                    Have an Account ? Register
+                                </a>
+                            </div>
+
+                            <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
+                                    aria-hidden="true"></i>
+                                Sign In with Google</button>
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
+                                    aria-hidden="true"></i> Sign In with Facebook </button>
+
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email ID">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Mobile Number">
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Confirm Password">
+                            </div>
+
+                            <button type="submit" class="btn btn-dark btn-signin"
+                                style="width: 100%; margin-bottom: 10px;">Register</button>
+
+                            <div class="form-group">
+
+                                <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Already
+                                    Have an Account ? Sign
+                                    In
+                                </a>
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
+                                    aria-hidden="true"></i>
+                                Sign In with Google</button>
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
+                                    aria-hidden="true"></i> Sign In with Facebook </button>
+
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div> -->
+                </div>
+            </div>
+        </div>
     </section>
+
+
+
+    <!-- Modal -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
 
     <footer class="footer text-muted" id="bigfooter">
@@ -544,7 +629,8 @@
         <!-- Copyright -->
     </footer>
 
-    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -581,20 +667,69 @@
     $(".btn").click(function () {
         $(".input").val("");
     });
+
     function w3_open() {
 
         document.getElementById("mySidebar").style.display = "block";
         document.getElementById("myOverlay").style.display = "block";
-        var x = document.getElementById("search");
-        x.style.display = "none";
+
 
     }
 
     function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
         document.getElementById("myOverlay").style.display = "none";
-        var x = document.getElementById("search");
-        x.style.display = "block";
+
+    }
+
+
+
+
+    $(function () {
+        $("#ko").tooltip("show");
+
+    });
+
+    setTimeout(function () {
+        $('#ko').tooltip("hide");
+    }, 10000);
+
+
+
+    $(document).ready(function () {
+        // Activate Carousel with a specified interval
+        $("#carouselExampleIndicators").carousel({ interval: 2900 });
+
+        // Enable Carousel Indicators
+        $(".item1").click(function () {
+            $("#carouselExampleIndicators").carousel(0);
+        });
+        $(".item2").click(function () {
+            $("#carouselExampleIndicators").carousel(1);
+        });
+        $(".item3").click(function () {
+            $("#carouselExampleIndicators").carousel(2);
+        });
+
+        // Enable Carousel Controls
+        $(".carousel-control-prev").click(function () {
+            $("#carouselExampleIndicators").carousel("prev");
+        });
+        $(".carousel-control-next").click(function () {
+            $("#carouselExampleIndicators").carousel("next");
+        });
+    });
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
     }
 
 </script>

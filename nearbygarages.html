@@ -7,15 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Vego - Nearby Showrooms</title>
+    <title>Vego - Nearby Garages</title>
 </head>
+<header id="sidebar ">
+    <div class="w3-sidebar w3-bar-block w3-animate-left " style="display:none;z-index:5;width:80%;" id="mySidebar">
+        <a class="w3-bar-item"  onclick="w3_close()">
+            <i class="fa fa-window-close" style="float: right;" aria-hidden="true"></i></a>
 
+        <a href="userprofile.html" class="w3-bar-item " style="color:black"><img src="images/user.png" style="width:50px"
+                alt=""> Hello User !</a>
+        <div class="dropdown-divider" style="margin-top:20px"></div>
+        <a style="color:black" href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Home</a>
+        <!---<a href="#" class="w3-bar-item w3-button">Your Orders </a> !-->
+
+        <div class="dropdown-divider"></div>
+
+        <a style="color:black" href="emergencyservice.html" class="w3-bar-item "><i class="fa fa-exclamation-triangle"
+                aria-hidden="true" style="margin-right: 1rem;"></i> Emergency Service</a>
+        <a style="color:black" href="vehcilecomparison.html" class="w3-bar-item "><i class="fa fa-balance-scale" aria-hidden="true"
+                style="margin-right: 1rem;"></i>Compare Vehicles</a>
+        <a style="color:black" href="nearbyshowrooms.html" class="w3-bar-item "> <i class="fa fa-car" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Nearby Showrooms & Shops</a>
+        <a style="color:black" href="nearbygarages.html" class="w3-bar-item "><i class="fa fa-cogs" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Nearby Garages & Workshops</a>
+        <div class="dropdown-divider"></div>
+        <a style="color:black" href="workwithus.html" class="w3-bar-item "><i class="fa fa-handshake-o" aria-hidden="true"
+                style="margin-right: 1rem;"></i>Work With Us</a>
+        <a style="color:black" href="aboutus.html" class="w3-bar-item ">
+            <img src="images/about us.png" style="width:18px;margin-right: 0.7rem;" alt="">
+            About Us</a>
+        <a style="color:black" href="contactus.html" class="w3-bar-item"><i class="fa fa-phone-square" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Contact Us</a>
+        <div class="dropdown-divider"></div>
+        <a style="color:black" href="login.html" class="w3-bar-item"><i class="fa fa-sign-in" aria-hidden="true"
+                style="margin-right: 1rem;"></i> Login/Sign Up</a>
+
+        <div class="dropdown-divider"></div>
+
+
+
+    </div>
+</header>
 <body>
-    <header>
+    <header id="navbar">
         <div class="navigation-wrap bg-light start-header start-style">
             <div class="container">
                 <div class="row">
@@ -84,92 +123,432 @@
         </div>
     </header>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+
+
+    <header id="mobilenavbar">
+        <!-- Just an image -->
+        <nav class="navbar  navbar-light">
+            <button class="navbar-toggler menu-icon" type="button" data-toggle="collapse" aria-expanded="false"
+                onclick="w3_open()" aria-label="Toggle navigation" style="border:none;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="85" height="45" alt="">
+            </a>
+
+        </nav>
+        <div class="container sticky-top" id="myHeader">
+
+            <div id="search">
+                <div class="fixedsearchbox">
+                    <button class="btn-menu">
+                  <img src="images/search bar.png" alt="" style="float:left;width:30px">
+                    </button>
+                    <input id="fixedsearch" type="text" placeholder="Search For Garage, Showroom or Location"
+                        class="search">
+                </div>
+            </div>
+
+
+
+        </div>
+      
+        <section id="ownerlocation">
+            <div class="alert" role="alert" data-toggle="modal" data-target="#locationmodal">
+
+                <i style="font-size:18px" class="fa fa-location-arrow"  aria-hidden="true"></i>
+                <a id="ko" > Kunal - Parbhani 431512 <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
+    </header>
+
+
+    <!--
+        <section id="searchshowroommobile">
+        <div class="container-fluid showroommobile">
+            <div class="container">
+                <div class="row" id="searchrow">
+                    <div class="searchbox2">
+                        <button class="btn-menu" style="padding-top:22px;">
+                            <img src="images/img_227234.png" class="img-fluid caricon" width="70px">
+                        </button>
+                        <input id="search" type="text" placeholder="Search Nearby Garage" name="search" class="search">
+                        <button class="btn-search">
+                            <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+        --->
+
+        <section id="showroomscardsmobile">
+            <section id=" filteroption">
+                <div style="float:left;font-weight:750;font-size:13px;margin-top:15px;margin-left:10px">
+                    <p>20 Showrooms Found
+                    <p>
+                </div>
+                <div class="alert alert-light" role="alert" style="float:right">
+                    <button onclick="w3_openfilter()" class="btn btn-outline-dark btn-sm" style="width:110%"> filters <i
+                            class="fa fa-angle-down" aria-hidden="true"></i></button>
+                </div>
+    
+            </section>
+    
+            <header id="sidebar ">
+                <div class="w3-sidebar w3-bar-block w3-animate-bottom fixed" style="display:none;z-index:5;width:100%;"
+                    id="filtersidebar">
+                    <button class="w3-bar-item w3-button w3-large" onclick="w3_closefilter()"><i class="fa fa-filter"
+                            aria-hidden="true"></i> Filters<i class="fa fa-window-close" style="float: right;"
+                            aria-hidden="true"></i></button>
+                    <div class="filters text-center">
+                        <button style="border-radius: 12px;margin-top:10px;margin-right:10px"
+                            class="btn btn-outline-dark btn-sm"> Sort By Ratings</button>
+                        <button style="border-radius: 12px;margin-top:10px;margin-right:10px"
+                            class="btn btn-outline-dark btn-sm"> Show only Authorized</button>
+    
+                        <button style="border-radius: 12px;margin-top:10px" class="btn btn-outline-dark btn-sm"> Sort By
+                            Distance From You</button>
+    
+                    </div>
+    
+                </div>
+            </header>
+    
+            <div class="servicesverticalcards">
+    
+                <div id="scrad">
+                    <div class="row" id="showroomscardsrow" style="border-bottom:none">
+    
+                        <div class="col" id="simg">
+                            <img src="images/garage1 (1).jpg" alt="">
+                        </div>
+                        <div class="col" id="sinfo">
+                            <h3>Akshay Automobiles</h3>
+                           
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh Colony , Purna , Dist Parbhani </p>
+                        </div>
+        
+                    </div>
+                    <div class="row" id="showroomscardsrow2">
+        
+                        <div class="col" id="sstatus">
+                            <p>Open Now
+        
+                            </p>
+        
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="sdist">
+                            <p>2.5 KM
+                            </p>
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="bimg">
+                            <p><b>3-Wheeler</b></p>
+                        </div>
+        
+        
+                    </div>
+                </div>
+                <div id="scrad">
+                    <div class="row" id="showroomscardsrow" style="border-bottom:none">
+    
+                        <div class="col" id="simg">
+                            <img src="images/garage1 (2).jpg" alt="">
+                        </div>
+                        <div class="col" id="sinfo">
+                            <h3>Kunal da Garage</h3>
+                           
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh Colony , Purna , Dist Parbhani </p>
+                        </div>
+        
+                    </div>
+                    <div class="row" id="showroomscardsrow2">
+        
+                        <div class="col" id="sstatus" >
+                            <p style="color:rgb(179, 35, 35)"> Closed
+        
+                            </p>
+        
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="sdist">
+                            <p>2.5 KM
+                            </p>
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="bimg">
+                            <p><b>2-Wheeler</b></p>
+                           </div>
+        
+                    </div>
+                </div>
+           
+                <div id="scrad">
+                    <div class="row" id="showroomscardsrow" style="border-bottom:none">
+    
+                        <div class="col" id="simg">
+                            <img src="images/garage1 (3).jpg" alt="">
+                        </div>
+                        <div class="col" id="sinfo">
+                            <h3>Billu da Garage</h3>
+                           
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh Colony , Purna , Dist Parbhani </p>
+                        </div>
+        
+                    </div>
+                    <div class="row" id="showroomscardsrow2">
+        
+                        <div class="col" id="sstatus">
+                            <p>Open Now
+        
+                            </p>
+        
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="sdist">
+                            <p>2.5 KM
+                            </p>
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="bimg">
+                          <p><b>2,3-Wheeler</b></p>
+                        </div>
+        
+        
+                    </div>
+                </div>
+           
+                <div id="scrad">
+                    <div class="row" id="showroomscardsrow" style="border-bottom:none">
+    
+                        <div class="col" id="simg">
+                            <img src="images/garage1 (4).jpg" alt="">
+                        </div>
+                        <div class="col" id="sinfo">
+                            <h3>Akshay Auto Tvs Dealer</h3>
+                           
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh Colony , Purna , Dist Parbhani </p>
+                        </div>
+        
+                    </div>
+                    <div class="row" id="showroomscardsrow2">
+        
+                        <div class="col" id="sstatus">
+                            <p>Open Now
+        
+                            </p>
+        
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="sdist">
+                            <p>2.5 KM
+                            </p>
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="bimg">
+                            <p><b>2,3-Wheeler</b></p>
+                           </div>
+        
+                    </div>
+                </div>
+           
+                <div id="scrad">
+                    <div class="row" id="showroomscardsrow" style="border-bottom:none">
+    
+                        <div class="col" id="simg">
+                            <img src="images/showroom1.jpg" alt="">
+                        </div>
+                        <div class="col" id="sinfo">
+                            <h3>Akshay Auto Tvs Dealer</h3>
+                           
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh Colony , Purna , Dist Parbhani </p>
+                        </div>
+        
+                    </div>
+                    <div class="row" id="showroomscardsrow2">
+        
+                        <div class="col" id="sstatus">
+                            <p>Open Now
+        
+                            </p>
+        
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="sdist">
+                            <p>2.5 KM
+                            </p>
+        
+                        </div>
+                        <span id="bull">&#8226;</span>
+                        <div class="col" id="bimg">
+                            <p><b>2,3-Wheeler</b></p>
+                           </div>
+        
+                    </div>
+                </div>
+           
+           
+    
+    
+            </div>
+    
+    
+        </section>
+
+    <section id="mobilefooter">
+        <footer class="mobilefooter" style="position: relative;">
+            <p class="footer-item mx-auto">© 2020-2021 VeGO</p>
+            <a style="margin: auto;" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+        </footer>
+    </section>
+
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">Login/Register</h4>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-
-                    <div class="wrapper">
-                        <div class="container">
-                            <div class="login">Log In</div>
-                            <div class="signup">Sign Up</div>
-
-
-                            <div class="login-form">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Mobile No</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter Mobile Number">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your
-                                            number with anyone else.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Password">
-                                        <a href="">Forgot Password ?</a>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-danger btn-block">Login</button>
-                                </form>
-                            </div>
-
-                            <div class="signup-form">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Name</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Contact No</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Mobile Number">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your
-                                            Number with anyone else.</small>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">New Password</label>
-                                        <input type="password" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter New Password">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Confirm Password</label>
-                                        <input type="password" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Confirm Password">
-                                    </div>
-                                    <button type="submit" class="btn btn-danger btn-block">Create Account</button>
-                                </form>
-                            </div>
-
-
-
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email ID">
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Mobile Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
 
+                        <button type="submit" class="btn btn-dark btn-signin" style="width: 100%;">Sign In</button>
+                        <hr>
+                        <div class="form-group">
+                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Don't Have an Account ? Register
+                            </a>
+                        </div>
 
+                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google" aria-hidden="true"></i>
+                            Sign In with Google</button>
+                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
+                                aria-hidden="true"></i> Sign In with Facebook </button>
 
-
-
-
+                    </form>
                 </div>
-                <div class="modal-footer d-flex justify-content-center">
-
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email ID">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Mobile Number">
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Confirm Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-dark btn-signin"
+                            style="width: 100%; margin-bottom: 10px;">Register</button>
+
+                        <div class="form-group">
+
+                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Already Have an Account ? Sign
+                                In
+                            </a>
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google" aria-hidden="true"></i>
+                            Sign In with Google</button>
+                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
+                                aria-hidden="true"></i> Sign In with Facebook </button>
+
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div> -->
             </div>
         </div>
     </div>
 
-    <br><br><br>
-    <section>
+    <section id="garagesearchboxdesktop">
 
         <div class="container-fluid nearbyshowroom  ">
             <div class="container">
@@ -181,29 +560,29 @@
                 <div class="row">
                     <div class="searchbox2 s">
                         <button class="btn-menu nearby">
-                            <img src="images/img_227234.png" class="img-fluid caricon" width="80px">
+                            <img src="images/service4.png" class="img-fluid caricon" width="60px">
                         </button>
                         <input id="search" type="text" placeholder="Search Garage and Service Center" name="search"
                             class="search">
                         <button class="btn-search nearby2">
-                            <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+                            <img src="images/search bar.png" style="width:2.2rem;margin-top:-5px">
                         </button>
                     </div>
-               
+
 
                 </div>
-          
+
             </div>
         </div>
     </section>
 
-    <div class="container-fluid services pt-4">
+    <div class="container-fluid services" id="servicecentersheading">
         <h4>Garages <span>and</span> Service Centers <span>Nearby You</span></h4>
 
         <div class="d-flex justify-content-around pt-4">
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -214,17 +593,20 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                     <ul class="list-group list-group-flush pt-2">
-                  
+
                         <li class="list-group-item">+91 7774843561</li>
+                        <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
                         <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
+                        <a href="garageinfo.html">
+                            <li class="list-group-item"><span class="distance">See Info <i
+                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                        </a>
                     </ul>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom2.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/showroom2.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -235,17 +617,21 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                     <ul class="list-group list-group-flush pt-2">
-                    
+
                         <li class="list-group-item">+91 7774843561</li>
+                        <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
+
                         <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
+                        <a href="garageinfo.html">
+                            <li class="list-group-item"><span class="distance">See Info <i
+                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                        </a>
                     </ul>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom3.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/showroom3.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -257,17 +643,21 @@
                     <span class="fa fa-star"></span>
                     <ul class="list-group list-group-flush pt-2">
                         <ul class="list-group list-group-flush pt-2">
-                       
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
-                    </ul>
+
+                            <li class="list-group-item">+91 7774843561</li>
+                            <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
+
+                            <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                            <a href="garageinfo.html">
+                                <li class="list-group-item"><span class="distance">See Info <i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                            </a>
+                        </ul>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom4.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/showroom4.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -279,13 +669,123 @@
                     <span class="fa fa-star"></span>
                     <ul class="list-group list-group-flush pt-2">
                         <ul class="list-group list-group-flush pt-2">
-                        
+
+                            <li class="list-group-item">+91 7774843561</li>
+                            <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
+
+                            <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+
+                            <a href="garageinfo.html">
+                                <li class="list-group-item"><span class="distance">See Info <i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                            </a>
+                        </ul>
+                </div>
+            </div>
+
+        </div>
+      
+        <div class="d-flex justify-content-around pt-4">
+            <div class="card" style="width: 18rem;">
+                <div class="inner">
+                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap" style="width:100%;height:150px">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Garage 1</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <ul class="list-group list-group-flush pt-2">
+
                         <li class="list-group-item">+91 7774843561</li>
+                        <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
                         <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                   
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
+                        <a href="garageinfo.html">
+                            <li class="list-group-item"><span class="distance">See Info <i
+                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                        </a>
                     </ul>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="inner">
+                    <img class="card-img-top" src="images/showroom2.jpg" alt="Card image cap" style="width:100%;height:150px">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title"> Garage 2</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <ul class="list-group list-group-flush pt-2">
+
+                        <li class="list-group-item">+91 7774843561</li>
+                        <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
+
+                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                        <a href="garageinfo.html">
+                            <li class="list-group-item"><span class="distance">See Info <i
+                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="inner">
+                    <img class="card-img-top" src="images/showroom3.jpg" alt="Card image cap" style="width:100%;height:150px">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Garage 3</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <ul class="list-group list-group-flush pt-2">
+                        <ul class="list-group list-group-flush pt-2">
+
+                            <li class="list-group-item">+91 7774843561</li>
+                            <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
+
+                            <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                            <a href="garageinfo.html">
+                                <li class="list-group-item"><span class="distance">See Info <i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                            </a>
+                        </ul>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="inner">
+                    <img class="card-img-top" src="images/showroom4.jpg" alt="Card image cap" style="width:100%;height:150px">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Garage 4</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <ul class="list-group list-group-flush pt-2">
+                        <ul class="list-group list-group-flush pt-2">
+
+                            <li class="list-group-item">+91 7774843561</li>
+                            <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
+
+                            <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+
+                            <a href="garageinfo.html">
+                                <li class="list-group-item"><span class="distance">See Info <i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                            </a>
+                        </ul>
                 </div>
             </div>
 
@@ -293,7 +793,7 @@
         <div class="d-flex justify-content-around pt-4">
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -304,17 +804,20 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                     <ul class="list-group list-group-flush pt-2">
-                  
+
                         <li class="list-group-item">+91 7774843561</li>
+                        <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
                         <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
+                        <a href="garageinfo.html">
+                            <li class="list-group-item"><span class="distance">See Info <i
+                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                        </a>
                     </ul>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom2.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/showroom2.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -325,17 +828,21 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                     <ul class="list-group list-group-flush pt-2">
-                    
+
                         <li class="list-group-item">+91 7774843561</li>
+                        <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
+
                         <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
+                        <a href="garageinfo.html">
+                            <li class="list-group-item"><span class="distance">See Info <i
+                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                        </a>
                     </ul>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom3.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/showroom3.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -347,17 +854,21 @@
                     <span class="fa fa-star"></span>
                     <ul class="list-group list-group-flush pt-2">
                         <ul class="list-group list-group-flush pt-2">
-                       
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
-                    </ul>
+
+                            <li class="list-group-item">+91 7774843561</li>
+                            <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
+
+                            <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                            <a href="garageinfo.html">
+                                <li class="list-group-item"><span class="distance">See Info <i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                            </a>
+                        </ul>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="inner">
-                    <img class="card-img-top" src="images/showroom4.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/showroom4.jpg" alt="Card image cap" style="width:100%;height:150px">
                 </div>
 
                 <div class="card-body">
@@ -369,103 +880,17 @@
                     <span class="fa fa-star"></span>
                     <ul class="list-group list-group-flush pt-2">
                         <ul class="list-group list-group-flush pt-2">
-                        
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                   
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
-                    </ul>
-                </div>
-            </div>
 
-        </div>
-        <div class="d-flex justify-content-around pt-4">
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom1.jpg" alt="Card image cap">
-                </div>
+                            <li class="list-group-item">+91 7774843561</li>
+                            <li class="list-group-item"><span class="distance" style="color:black">2.5KM</span></li>
 
-                <div class="card-body">
-                    <h5 class="card-title">Garage 1</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                  
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom2.jpg" alt="Card image cap">
-                </div>
+                            <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
 
-                <div class="card-body">
-                    <h5 class="card-title"> Garage 2</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                    
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom3.jpg" alt="Card image cap">
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Garage 3</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <ul class="list-group list-group-flush pt-2">
-                       
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="inner">
-                    <img class="card-img-top" src="images/showroom4.jpg" alt="Card image cap">
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Garage 4</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <ul class="list-group list-group-flush pt-2">
-                        <ul class="list-group list-group-flush pt-2">
-                        
-                        <li class="list-group-item">+91 7774843561</li>
-                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
-                   
-                        <a href="garageinfo.html"><li class="list-group-item"><span class="distance">See Info <i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></span></li></a>
-                    </ul>
+                            <a href="garageinfo.html">
+                                <li class="list-group-item"><span class="distance">See Info <i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></span></li>
+                            </a>
+                        </ul>
                 </div>
             </div>
 
@@ -474,8 +899,10 @@
                 aria-hidden="true"></i></a>
     </div>
 
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_closefilter()" style="cursor:pointer" id="myOverlay"></div>
 
-    <footer class="footer text-muted">
+    <footer class="footer text-muted" id="bigfooter">
 
 
         <!-- Footer Links -->
@@ -516,9 +943,9 @@
                         </p>
                         <p>
                             <a class="dark-grey-text" href="#">Contact Us
-                                </a>
+                            </a>
                         </p>
-                   
+
                     </div>
                 </div>
 
@@ -620,24 +1047,63 @@
     <script>
         $(".signup-form").hide();
         $(".signup").css("background", "none");
-    
+
         $(".login").click(function () {
             $(".signup-form").hide();
             $(".login-form").show();
             $(".signup").css("background", "none");
-            $(".login").css("background","#75e2e9");
+            $(".login").css("background", "#75e2e9");
         });
-    
+
         $(".signup").click(function () {
             $(".signup-form").show();
             $(".login-form").hide();
             $(".login").css("background", "none");
             $(".signup").css("background", "#75e2e9");
         });
-    
+
         $(".btn").click(function () {
             $(".input").val("");
         });
+
+
+
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+        function w3_open() {
+   
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+            var x = document.getElementById("search");
+            x.style.display = "none";
+            
+        }
+    
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+            var x = document.getElementById("search");
+            x.style.display = "block";
+        }
+        function w3_openfilter() {
+            document.getElementById("filtersidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closefilter() {
+            document.getElementById("filtersidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
     </script>
 </body>
 

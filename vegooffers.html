@@ -11,15 +11,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Vego - Register Showroom </title>
+    <meta name="description" content="Online Vehicle Repair Service">
+    <meta name="keywords"
+        content="car,garage,showroom,shop,bike,tcs,honda,audi,mechanic,repair,carcompare,carbuy,carshop">
+    <meta name="author" content="Kunal Pandharkar">
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://google.com" />
+    <link rel="shortcut icon" href="images/pp.jpg" type="/x-icon" />
+
+
+    <title>VeGO - Offers</title>
 </head>
+
 <header id="sidebar ">
     <div class="w3-sidebar w3-bar-block w3-animate-left " style="display:none;z-index:5;width:80%;" id="mySidebar">
-        <a class="w3-bar-item"  onclick="w3_close()">
+        <a class="w3-bar-item" onclick="w3_close()">
             <i class="fa fa-window-close" style="float: right;" aria-hidden="true"></i></a>
 
-        <a href="userprofile.html" class="w3-bar-item " style="color:black"><img src="images/user.png" style="width:50px"
-                alt=""> Hello User !</a>
+        <a href="userprofile.html" class="w3-bar-item " style="color:black"><img src="images/user.png"
+                style="width:50px" alt=""> Hello User !</a>
         <div class="dropdown-divider" style="margin-top:20px"></div>
         <a style="color:black" href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"
                 style="margin-right: 1rem;"></i> Home</a>
@@ -29,20 +40,20 @@
 
         <a style="color:black" href="emergencyservice.html" class="w3-bar-item "><i class="fa fa-exclamation-triangle"
                 aria-hidden="true" style="margin-right: 1rem;"></i> Emergency Service</a>
-        <a style="color:black" href="vehcilecomparison.html" class="w3-bar-item "><i class="fa fa-balance-scale" aria-hidden="true"
-                style="margin-right: 1rem;"></i>Compare Vehicles</a>
+        <a style="color:black" href="vehcilecomparison.html" class="w3-bar-item "><i class="fa fa-balance-scale"
+                aria-hidden="true" style="margin-right: 1rem;"></i>Compare Vehicles</a>
         <a style="color:black" href="nearbyshowrooms.html" class="w3-bar-item "> <i class="fa fa-car" aria-hidden="true"
                 style="margin-right: 1rem;"></i> Nearby Showrooms & Shops</a>
         <a style="color:black" href="nearbygarages.html" class="w3-bar-item "><i class="fa fa-cogs" aria-hidden="true"
                 style="margin-right: 1rem;"></i> Nearby Garages & Workshops</a>
         <div class="dropdown-divider"></div>
-        <a style="color:black" href="workwithus.html" class="w3-bar-item "><i class="fa fa-handshake-o" aria-hidden="true"
-                style="margin-right: 1rem;"></i>Work With Us</a>
+        <a style="color:black" href="workwithus.html" class="w3-bar-item "><i class="fa fa-handshake-o"
+                aria-hidden="true" style="margin-right: 1rem;"></i>Work With Us</a>
         <a style="color:black" href="aboutus.html" class="w3-bar-item ">
             <img src="images/about us.png" style="width:18px;margin-right: 0.7rem;" alt="">
             About Us</a>
-        <a style="color:black" href="contactus.html" class="w3-bar-item"><i class="fa fa-phone-square" aria-hidden="true"
-                style="margin-right: 1rem;"></i> Contact Us</a>
+        <a style="color:black" href="contactus.html" class="w3-bar-item"><i class="fa fa-phone-square"
+                aria-hidden="true" style="margin-right: 1rem;"></i> Contact Us</a>
         <div class="dropdown-divider"></div>
         <a style="color:black" href="login.html" class="w3-bar-item"><i class="fa fa-sign-in" aria-hidden="true"
                 style="margin-right: 1rem;"></i> Login/Sign Up</a>
@@ -61,9 +72,9 @@
                 <div class="row">
                     <div class="col-12">
                         <nav class="navbar navbar-expand-md navbar-light">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="w3_open()"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="brand">
@@ -123,6 +134,7 @@
             </div>
         </div>
     </header>
+
     <header id="mobilenavbar">
         <!-- Just an image -->
         <nav class="navbar  navbar-light">
@@ -143,7 +155,7 @@
                     <button class="btn-menu">
                         <img src="images/search bar.png" alt="" style="float:left;width:30px">
                     </button>
-                    <input id="fixedsearch" type="text" placeholder="Search For Garage, Showroom or Location"
+                    <input id="fixedsearch" type="text" placeholder="Search For Offer"
                         class="search">
                 </div>
             </div>
@@ -162,245 +174,56 @@
 
     </header>
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up">Register Your Showroom With Us.</h1>
-                    <h2 data-aos="fade-up" class="" data-aos-delay="400">Bring Your Garage Online And Available For
-                        Customers For 24 Hr.</h2>
-                    <div data-aos="fade-up" data-aos-delay="800">
-                        <a href="showroomregform.html" class="btn-get-started scrollto">Register Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-                    <img src="images/showroom vector.jpg" class="img-fluid animated" alt="">
-                </div>
-            </div>
+
+
+
+
+
+
+
+
+    <section>
+        <div class="container text-center" id="offerspg">
+            <img src="images/offercard1.jpg"  alt="">
+            <img src="images/offercard2.png" alt="">
+            <img src="images/offeercard3.jpg" alt="">
+            <img src="images/offercard1.jpg"  alt="">
+            <img src="images/offercard2.png" alt="">
+            <img src="images/offeercard3.jpg" alt="">
         </div>
+    </section>
 
-    </section><!-- End Hero -->
-    <div class="container-fluid heading" style="margin-top:10%">
-        <h4><span>Our</span> Features <span></span></h4>
 
-    </div>
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-        <div class="container">
 
-            <div class="container-fluid services">
-                <h4><span>What We </span> Provide <span>To You</span></h4>
-                <p> We cater an array of high-end products for Education and Government Sector </p>
+
+    <!-- mobile bottom navbar -->
+
+
+    <nav class="nav-mob" id="mobilefooter">
+        <a href="index.html" class="nav__link nav__link--active">
+            <i class="fa fa-home" aria-hidden="true" style="font-size:24px"></i>
+            <span class="nav__text">Home</span>
+        </a>
+        <a href="vegooffers.html" class="nav__link">
+            <img src="images/local_offer-24px.svg" alt="">
+            <span class="nav__text">Offers</span>
+        </a>
+        <a href="#" class="nav__link">
+
+            <div class="nav__icon__logo">
+                <img src="images/pp.jpg" alt="">
             </div>
-
-            <div class="row" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/bring showroom online.png" style="height:40px;width:45px" alt="">
-                        &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Bring Your Showroom Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/sell vehicle.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Sell Vehicles Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/nearby customers.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get All Nearby Customer To You</a></h3>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/car3.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Allow Customers To See Vehicles and Rates Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/more profit.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Make More Profit</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/faster service.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Faster Service</a></h3>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/nearby customers.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Allow Customers To Find You Easily</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/24_7 working.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">24 X 7 Working</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/feedback.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get Customers Feedback</a></h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/logo.png" style="height:40px;width:55px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Be Service Provider On Vego</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/get business app.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get Business App To Manage Your Data</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/yearly maintenance.png" style="height:40px;width:45px" alt="">
-                        &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Yearly Maintainance : ₹1499</a></h3>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section><!-- End Features Section -->
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin" style="width: 100%;">Sign In</button>
-                        <hr>
-                        <div class="form-group">
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Don't Have
-                                an Account ? Register
-                            </a>
-                        </div>
-
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
-                                aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
-
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Confirm Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin"
-                            style="width: 100%; margin-bottom: 10px;">Register</button>
-
-                        <div class="form-group">
-
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Already Have
-                                an Account ? Sign
-                                In
-                            </a>
-                        </div>
-                        <hr>
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
-                                aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
-
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container">
-        <div class="row" style="margin-top:4%;margin-left:10%;margin-right:10%;margin-bottom:5%"
-            onclick="location.href='showroomregform.html';">
-
-            <button class="btn btn-block" id="clickhereform"> Click Here To Fill Registration Form </button>
-
-        </div>
-    </div>
-
-
-
+        </a>
+        <a href="contactus.html" class="nav__link">
+            <img src="images/contact_page-24px.svg" alt="">
+            <span class="nav__text">Contact</span>
+        </a>
+        <a href="userprofile.html" class="nav__link">
+            <img src="images/account_circle-24px.svg" alt="">
+            <span class="nav__text">Profile</span>
+        </a>
+    </nav>
 
 
     <section id="mobilefooter">
@@ -410,6 +233,7 @@
 
         </footer>
     </section>
+
 
 
     <footer class="footer text-muted" id="bigfooter">
@@ -543,9 +367,6 @@
         </div>
         <!-- Copyright -->
     </footer>
-
-    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -581,6 +402,7 @@
     $(".btn").click(function () {
         $(".input").val("");
     });
+
     function w3_open() {
 
         document.getElementById("mySidebar").style.display = "block";
@@ -596,6 +418,12 @@
         var x = document.getElementById("search");
         x.style.display = "block";
     }
+
+
+
+
+
+
 
 </script>
 

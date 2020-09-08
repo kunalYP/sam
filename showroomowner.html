@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -11,8 +11,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Vego - Register Showroom </title>
+    <meta name="description" content="Online Vehicle Repair Service">
+    <meta name="keywords"
+        content="car,garage,showroom,shop,bike,tcs,honda,audi,mechanic,repair,carcompare,carbuy,carshop">
+    <meta name="author" content="Kunal Pandharkar">
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://google.com" />
+    <link rel="shortcut icon" href="images/pp.jpg" type="/x-icon" />
+
+
+    <title>VeGO - Showroom (edit)</title>
 </head>
+
 <header id="sidebar ">
     <div class="w3-sidebar w3-bar-block w3-animate-left " style="display:none;z-index:5;width:80%;" id="mySidebar">
         <a class="w3-bar-item"  onclick="w3_close()">
@@ -55,15 +66,17 @@
 </header>
 
 <body>
+    <style>
+    </style>
     <header id="navbar">
         <div class="navigation-wrap bg-light start-header start-style">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <nav class="navbar navbar-expand-md navbar-light">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="w3_open()"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="brand">
@@ -123,6 +136,8 @@
             </div>
         </div>
     </header>
+
+
     <header id="mobilenavbar">
         <!-- Just an image -->
         <nav class="navbar  navbar-light">
@@ -141,10 +156,10 @@
             <div id="search">
                 <div class="fixedsearchbox">
                     <button class="btn-menu">
+                        <span class="close"></span>
                         <img src="images/search bar.png" alt="" style="float:left;width:30px">
                     </button>
-                    <input id="fixedsearch" type="text" placeholder="Search For Garage, Showroom or Location"
-                        class="search">
+                    <input id="fixedsearch" type="text" placeholder="Help" class="search">
                 </div>
             </div>
 
@@ -162,242 +177,124 @@
 
     </header>
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up">Register Your Showroom With Us.</h1>
-                    <h2 data-aos="fade-up" class="" data-aos-delay="400">Bring Your Garage Online And Available For
-                        Customers For 24 Hr.</h2>
-                    <div data-aos="fade-up" data-aos-delay="800">
-                        <a href="showroomregform.html" class="btn-get-started scrollto">Register Now</a>
+    <section>
+        <div class="container heading" style="padding-top:10px;">
+            <h4><span>Edit</span> <span>Showroom 1</span></h4>
+            <p>Ahemadnagar</p>
+        </div>
+        <div class="container-fluid services" id="ownershowroomdesk">
+            <h4><span>Edit</span> Showroom <span>Details</span></h4>
+            <p> We cater an array of high-end products for Education and Government Sector </p>
+        </div>
+        <div class="container editdata bg-light">
+            <form action="addvehicles.html">
+
+                <!--To give the control a modern look, I have applied a stylesheet in the parent span.-->
+
+                <label for="fname">Showroom Photos</label>
+                <input type="file" name="files[]" id="files" multiple accept="image/jpeg, image/png, image/gif,"
+                    class="imageupload"><br />
+                </span>
+                <output id="Filelist"></output>
+
+                <div class="alreadyimgs">
+                    <div class="row">
+                        <div class="col imgal">
+
+                            <i class="fa fa-times " aria-hidden="true"></i>
+                            <img src="images/showroom1.jpg" id="imgaldesk" alt="">
+
+                        </div>
+                        <div class="col imgal">
+                            <i class="fa fa-times " aria-hidden="true"></i>
+                            <img src="images/showroom2.jpg" id="imgaldesk" alt="">
+
+                        </div>
+                        <div class="col imgal">
+                            <i class="fa fa-times " aria-hidden="true"></i>
+                            <img src="images/showroom3.jpg" id="imgaldesk" alt="">
+
+                        </div>
                     </div>
+                    <div class="row pt-2">
+                        <div class="col imgal">
+
+                            <i class="fa fa-times " aria-hidden="true"></i>
+                            <img src="images/showroom1.jpg" id="imgaldesk" alt="">
+                        </div>
+                        <div class="col imgal">
+                            <i class="fa fa-times " aria-hidden="true"></i>
+                            <img src="images/showroom2.jpg" id="imgaldesk" alt="">
+
+                        </div>
+                        <div class="col imgal">
+                            <i class="fa fa-times " aria-hidden="true"></i>
+                            <img src="images/showroom3.jpg" id="imgaldesk" alt="">
+
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-                    <img src="images/showroom vector.jpg" class="img-fluid animated" alt="">
+
+                <hr>
+                <label class="pt-4" for="fname">Showroom Name</label>
+                <input type="text" id="fname" name="firstname" Value="Kp Showroom">
+
+                <label for="lname">Owner Name</label>
+                <input type="text" id="fname" name="lastname" value="Kunal Pandharkar">
+
+                <label for="lname">Brand</label>
+                <input type="text" id="fname" name="lastname" value="Honda">
+
+
+                <label for="subject">Address</label>
+                <textarea name="subject"
+                    style="height:100px">Kunal Niwas, Adarsh Colony, Purna , Dist. Parbhani</textarea>
+
+                <label for="lname">Working Time</label>
+                <input type="time" id="time1" name="appt" min="00:00" max="24:00" >
+                <span>To</span>
+                <input type="time" id="time2" name="appt" min="09:00" max="18:00" >
+
+                <br>
+                <label for="country">Holiday</label>
+                <select id="country" name="country">
+                    <option value="australia">Monday</option>
+                    <option value="canada">Tuesday</option>
+                    <option value="usa">Wednesday</option>
+                    <option value="usa">Thursday</option>
+                    <option value="usa">Friday</option>
+                    <option value="usa">Saturday</option>
+                    <option value="usa">Sunday</option>
+                </select>
+
+                <label for="lname">Mobile No 1</label>
+                <input type="text" id="fname" name="lastname" value="7774843561">
+
+                <label for="lname">Mobile No 2</label>
+                <input type="text" id="fname" name="lastname" value="9561601680">
+
+                <label for="lname">Whatsapp No</label>
+                <input type="text" id="fname" name="lastname" value="7774843561">
+
+                <label for="lname">Facebook Name</label>
+                <input type="text" id="fname" name="lastname" value="KunalPandharkar">
+
+
+                <div class="pb-4">
+                    <button class="btn btn-block" id="subjectadd" onclick="location.href='addvehicles.html';"> <i class="fa fa-plus" aria-hidden="true"></i>  Add Vehicles </button>
                 </div>
-            </div>
+
+
+
+
+                <input type="submit" value="Submit" id="subject">
+            </form>
         </div>
 
-    </section><!-- End Hero -->
-    <div class="container-fluid heading" style="margin-top:10%">
-        <h4><span>Our</span> Features <span></span></h4>
+    </section>
 
-    </div>
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-        <div class="container">
-
-            <div class="container-fluid services">
-                <h4><span>What We </span> Provide <span>To You</span></h4>
-                <p> We cater an array of high-end products for Education and Government Sector </p>
-            </div>
-
-            <div class="row" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/bring showroom online.png" style="height:40px;width:45px" alt="">
-                        &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Bring Your Showroom Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/sell vehicle.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Sell Vehicles Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/nearby customers.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get All Nearby Customer To You</a></h3>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/car3.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Allow Customers To See Vehicles and Rates Online</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/more profit.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Make More Profit</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/faster service.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Faster Service</a></h3>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/nearby customers.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Allow Customers To Find You Easily</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/24_7 working.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">24 X 7 Working</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/feedback.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get Customers Feedback</a></h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row pt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-4 col-md-4">
-                    <div class="icon-box">
-                        <img src="images/logo.png" style="height:40px;width:55px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Be Service Provider On Vego</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/get business app.png" style="height:40px;width:45px" alt=""> &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Get Business App To Manage Your Data</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <img src="images/yearly maintenance.png" style="height:40px;width:45px" alt="">
-                        &nbsp;&nbsp;&nbsp;
-                        <h3><a href="">Yearly Maintainance : ₹1499</a></h3>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section><!-- End Features Section -->
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin" style="width: 100%;">Sign In</button>
-                        <hr>
-                        <div class="form-group">
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Don't Have
-                                an Account ? Register
-                            </a>
-                        </div>
-
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
-                                aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
-
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Confirm Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin"
-                            style="width: 100%; margin-bottom: 10px;">Register</button>
-
-                        <div class="form-group">
-
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Already Have
-                                an Account ? Sign
-                                In
-                            </a>
-                        </div>
-                        <hr>
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
-                                aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
-
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container">
-        <div class="row" style="margin-top:4%;margin-left:10%;margin-right:10%;margin-bottom:5%"
-            onclick="location.href='showroomregform.html';">
-
-            <button class="btn btn-block" id="clickhereform"> Click Here To Fill Registration Form </button>
-
-        </div>
-    </div>
 
 
 
@@ -410,6 +307,17 @@
 
         </footer>
     </section>
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
 
 
     <footer class="footer text-muted" id="bigfooter">
@@ -544,7 +452,8 @@
         <!-- Copyright -->
     </footer>
 
-    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -561,26 +470,6 @@
 
 <script>
 
-    $(".signup-form").hide();
-    $(".signup").css("background", "none");
-
-    $(".login").click(function () {
-        $(".signup-form").hide();
-        $(".login-form").show();
-        $(".signup").css("background", "none");
-        $(".login").css("background", "#75e2e9");
-    });
-
-    $(".signup").click(function () {
-        $(".signup-form").show();
-        $(".login-form").hide();
-        $(".login").css("background", "none");
-        $(".signup").css("background", "#75e2e9");
-    });
-
-    $(".btn").click(function () {
-        $(".input").val("");
-    });
     function w3_open() {
 
         document.getElementById("mySidebar").style.display = "block";
@@ -596,6 +485,247 @@
         var x = document.getElementById("search");
         x.style.display = "block";
     }
+
+
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+    //I added event handler for the file upload control to access the files properties.
+    document.addEventListener("DOMContentLoaded", init, false);
+
+    //To save an array of attachments
+    var AttachmentArray = [];
+
+    //counter for attachment array
+    var arrCounter = 0;
+
+    //to make sure the error message for number of files will be shown only one time.
+    var filesCounterAlertStatus = false;
+
+    //un ordered list to keep attachments thumbnails
+    var ul = document.createElement("ul");
+    ul.className = "thumb-Images";
+    ul.id = "imgList";
+
+    function init() {
+        //add javascript handlers for the file upload event
+        document
+            .querySelector("#files")
+            .addEventListener("change", handleFileSelect, false);
+    }
+
+    //the handler for file upload event
+    function handleFileSelect(e) {
+        //to make sure the user select file/files
+        if (!e.target.files) return;
+
+        //To obtaine a File reference
+        var files = e.target.files;
+
+        // Loop through the FileList and then to render image files as thumbnails.
+        for (var i = 0, f; (f = files[i]); i++) {
+            //instantiate a FileReader object to read its contents into memory
+            var fileReader = new FileReader();
+
+            // Closure to capture the file information and apply validation.
+            fileReader.onload = (function (readerEvt) {
+                return function (e) {
+                    //Apply the validation rules for attachments upload
+                    ApplyFileValidationRules(readerEvt);
+
+                    //Render attachments thumbnails.
+                    RenderThumbnail(e, readerEvt);
+
+                    //Fill the array of attachment
+                    FillAttachmentArray(e, readerEvt);
+                };
+            })(f);
+
+            // Read in the image file as a data URL.
+            // readAsDataURL: The result property will contain the file/blob's data encoded as a data URL.
+            // More info about Data URI scheme https://en.wikipedia.org/wiki/Data_URI_scheme
+            fileReader.readAsDataURL(f);
+        }
+        document
+            .getElementById("files")
+            .addEventListener("change", handleFileSelect, false);
+    }
+
+    //To remove attachment once user click on x button
+    jQuery(function ($) {
+        $("div").on("click", ".img-wrap .close", function () {
+            var id = $(this)
+                .closest(".img-wrap")
+                .find("img")
+                .data("id");
+
+            //to remove the deleted item from array
+            var elementPos = AttachmentArray.map(function (x) {
+                return x.FileName;
+            }).indexOf(id);
+            if (elementPos !== -1) {
+                AttachmentArray.splice(elementPos, 1);
+            }
+
+            //to remove image tag
+            $(this)
+                .parent()
+                .find("img")
+                .not()
+                .remove();
+
+            //to remove div tag that contain the image
+            $(this)
+                .parent()
+                .find("div")
+                .not()
+                .remove();
+
+            //to remove div tag that contain caption name
+            $(this)
+                .parent()
+                .parent()
+                .find("div")
+                .not()
+                .remove();
+
+            //to remove li tag
+            var lis = document.querySelectorAll("#imgList li");
+            for (var i = 0; (li = lis[i]); i++) {
+                if (li.innerHTML == "") {
+                    li.parentNode.removeChild(li);
+                }
+            }
+        });
+    });
+
+    //Apply the validation rules for attachments upload
+    function ApplyFileValidationRules(readerEvt) {
+        //To check file type according to upload conditions
+        if (CheckFileType(readerEvt.type) == false) {
+            alert(
+                "The file (" +
+                readerEvt.name +
+                ") does not match the upload conditions, You can only upload jpg/png/gif files"
+            );
+            e.preventDefault();
+            return;
+        }
+
+        //To check file Size according to upload conditions
+        if (CheckFileSize(readerEvt.size) == false) {
+            alert(
+                "The file (" +
+                readerEvt.name +
+                ") does not match the upload conditions, The maximum file size for uploads should not exceed 300 KB"
+            );
+            e.preventDefault();
+            return;
+        }
+
+        //To check files count according to upload conditions
+        if (CheckFilesCount(AttachmentArray) == false) {
+            if (!filesCounterAlertStatus) {
+                filesCounterAlertStatus = true;
+                alert(
+                    "You have added more than 10 files. According to upload conditions you can upload 10 files maximum"
+                );
+            }
+            e.preventDefault();
+            return;
+        }
+    }
+
+    //To check file type according to upload conditions
+    function CheckFileType(fileType) {
+        if (fileType == "image/jpeg") {
+            return true;
+        } else if (fileType == "image/png") {
+            return true;
+        } else if (fileType == "image/gif") {
+            return true;
+        } else {
+            return false;
+        }
+        return true;
+    }
+
+    //To check file Size according to upload conditions
+    function CheckFileSize(fileSize) {
+        if (fileSize < 5000000) {
+            return true;
+        } else {
+            return false;
+        }
+        return true;
+    }
+
+    //To check files count according to upload conditions
+    function CheckFilesCount(AttachmentArray) {
+        //Since AttachmentArray.length return the next available index in the array,
+        //I have used the loop to get the real length
+        var len = 0;
+        for (var i = 0; i < AttachmentArray.length; i++) {
+            if (AttachmentArray[i] !== undefined) {
+                len++;
+            }
+        }
+        //To check the length does not exceed 10 files maximum
+        if (len > 9) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    //Render attachments thumbnails.
+    function RenderThumbnail(e, readerEvt) {
+        var li = document.createElement("li");
+        ul.appendChild(li);
+        li.innerHTML = [
+            '<div class="img-wrap"> <span class="close">&times;</span>' +
+            '<img class="thumb" src="',
+            e.target.result,
+            '" title="',
+            escape(readerEvt.name),
+            '" data-id="',
+            readerEvt.name,
+            '"/>' + "</div>"
+        ].join("");
+
+        var div = document.createElement("div");
+        div.className = "FileNameCaptionStyle";
+        li.appendChild(div);
+        div.innerHTML = [readerEvt.name].join("");
+        document.getElementById("Filelist").insertBefore(ul, null);
+    }
+
+    //Fill the array of attachment
+    function FillAttachmentArray(e, readerEvt) {
+        AttachmentArray[arrCounter] = {
+            AttachmentType: 1,
+            ObjectType: 1,
+            FileName: readerEvt.name,
+            FileDescription: "Attachment",
+            NoteText: "",
+            MimeType: readerEvt.type,
+            Content: e.target.result.split("base64,")[1],
+            FileSizeInBytes: readerEvt.size
+        };
+        arrCounter = arrCounter + 1;
+    }
+
+
 
 </script>
 
